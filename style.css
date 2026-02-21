@@ -1,0 +1,125 @@
+body {
+
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0f1115;
+color: #ffffff;
+
+}
+
+
+.header {
+
+background: #161a22;
+padding: 20px;
+border-bottom: 1px solid #333;
+
+}
+
+
+.logo-container {
+
+display: flex;
+align-items: center;
+gap: 15px;
+
+}
+
+
+.logo {
+
+height: 60px;
+
+}
+
+
+nav {
+
+margin-top: 15px;
+
+}
+
+
+nav a {
+
+color: white;
+text-decoration: none;
+margin-right: 20px;
+font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+color: #e30613;
+
+}
+
+
+.hero {
+
+padding: 40px;
+background: #1c212c;
+
+}
+
+
+.news {
+
+padding: 40px;
+
+}
+
+
+.news-grid {
+
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 20px;
+
+}
+
+
+.card {
+
+background: #161a22;
+padding: 20px;
+text-decoration: none;
+color: white;
+border: 1px solid #333;
+
+}
+
+
+.card:hover {
+
+border: 1px solid #e30613;
+
+}
+
+
+.date {
+
+color: #888;
+font-size: 14px;
+
+}
+
+
+.elections {
+
+padding: 40px;
+background: #1c212c;
+
+}
+
+
+footer {
+
+padding: 20px;
+background: #161a22;
+text-align: center;
+color: #aaa;
+
+}
