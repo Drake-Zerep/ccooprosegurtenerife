@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Noticias | CCOO Hábitat Prosegur Tenerife</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* Estilo tipo periódico */
+
+.news-page{
+
+max-width:1200px;
+margin:auto;
+padding:30px;
+
+}
+
+.news-header{
+
+border-bottom:3px solid #e30613;
+margin-bottom:30px;
+padding-bottom:10px;
+
+}
+
+.news-header h1{
+
+margin:0;
+font-size:32px;
+
+}
+
+.news-layout{
+
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+
+}
+
+.news-main{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.news-item{
+
+background:#12151c;
+padding:20px;
+border-left:4px solid #e30613;
+cursor:pointer;
+transition:0.2s;
+
+}
+
+.news-item:hover{
+
+background:#1a1f29;
+
+}
+
+.news-item img{
+
+width:100%;
+margin-bottom:10px;
+
+}
+
+.news-item h2{
+
+margin:0;
+
+}
+
+.news-sidebar{
+
+background:#12151c;
+padding:20px;
+
+}
+
+.category{
+
+color:#e30613;
+font-weight:bold;
+font-size:14px;
+
+}
+
+.date{
+
+color:#aaa;
+font-size:14px;
+
+}
+
+@media(max-width:900px){
+
+.news-layout{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="header-container">
+
+<div class="logo-area">
+
+<img src="img/logo.png">
+
+<div>
+<h1>CCOO Hábitat Prosegur Tenerife</h1>
+<span>Seguridad Privada · Santa Cruz de Tenerife</span>
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Inicio</a>
+<a href="noticias.html" class="highlight">Noticias</a>
+<a href="comunicados.html">Comunicados</a>
+<a href="elecciones.html">Elecciones 2026</a>
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="news-page">
+
+<div class="news-header">
+
+<h1>Noticias del sector</h1>
+
+<p>Actualidad laboral, legal y sindical en seguridad privada</p>
+
+</div>
+
+
+<div class="news-layout">
+
+<div id="news-list" class="news-main">
+
+</div>
+
+
+<div class="news-sidebar">
+
+<h3>Categorías</h3>
+
+<p>Información laboral</p>
+<p>Convenio colectivo</p>
+<p>Información legal</p>
+<p>Tecnología y seguridad</p>
+<p>Elecciones sindicales</p>
+
+</div>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
+</p>
+
+</footer>
+
+
+<script>
+
+fetch("data/noticias.json")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+const container=document.getElementById("news-list");
+
+// mostrar en orden inverso (más reciente primero)
+
+data.reverse().forEach(news=>{
+
+const item=document.createElement("div");
+
+item.className="news-item";
+
+item.onclick=()=>location.href=news.url;
+
+item.innerHTML=`
+
+<img src="${news.image}">
+
+<div class="category">${news.category}</div>
+
+<h2>${news.title}</h2>
+
+<p>${news.summary}</p>
+
+<div class="date">${news.date}</div>
+
+`;
+
+container.appendChild(item);
+
+});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
