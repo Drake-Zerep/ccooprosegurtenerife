@@ -5,6 +5,12 @@ fetch("data/noticias.json")
 const featuredContainer = document.getElementById("featured-container");
 const newsContainer = document.getElementById("news-container");
 
+// Seguridad: verificar que existen los contenedores
+if(!featuredContainer || !newsContainer){
+console.error("Contenedores no encontrados en index.html");
+return;
+}
+
 data.forEach(news => {
 
 if(news.featured){
@@ -41,5 +47,6 @@ newsContainer.appendChild(card);
 });
 
 })
-.catch(error => console.error(error));
+.catch(error => {
+console.error("Error cargando noticias:", error);
 });
