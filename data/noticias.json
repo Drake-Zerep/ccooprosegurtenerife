@@ -2,17 +2,20 @@
 {
 "title":"Bienvenidos a la web sindical",
 "date":"21 febrero 2026",
-"summary":"Nueva plataforma de información sindical de CCOO Hábitat para Prosegur Tenerife.",
+"summary":"Nueva plataforma oficial de información sindical.",
 "url":"noticias/bienvenida.html",
+"image":"img/noticias/bienvenida.jpg",
+"category":"Comunicado",
 "featured":true
 },
 
 {
-"title":"Próximas elecciones sindicales 2026",
+"title":"Elecciones sindicales 2026",
 "date":"21 febrero 2026",
-"summary":"CCOO Hábitat participará en el proceso electoral representando a los vigilantes.",
+"summary":"Proceso electoral sindical próximo.",
 "url":"elecciones.html",
+"image":"img/noticias/elecciones.jpg",
+"category":"Elecciones",
 "featured":false
 }
-
 ]
