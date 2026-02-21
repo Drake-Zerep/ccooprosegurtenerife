@@ -49,6 +49,22 @@ newsContainer.appendChild(card);
 
 }
 
+const electionDate=new Date("May 1, 2026 00:00:00");
+
+setInterval(()=>{
+
+const now=new Date();
+
+const diff=electionDate-now;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("countdown").innerText=
+
+"Faltan "+days+" días";
+
+},1000);
+  
 });
 
 });
