@@ -1,12 +1,22 @@
 [
 {
+"title":"La seguridad privada evoluciona hacia funciones críticas con mejores salarios",
+"date":"21 febrero 2026",
+"summary":"El sector de la seguridad privada evoluciona hacia funciones más técnicas y mejor remuneradas.",
+"url":"noticias/seguridad-privada-aumento-salarial.html",
+"image":"img/noticias/seguridad-privada.jpg",
+"category":"Información laboral",
+"featured":true
+},
+
+{
 "title":"Bienvenidos a la web sindical",
 "date":"21 febrero 2026",
 "summary":"Nueva plataforma oficial de información sindical.",
 "url":"noticias/bienvenida.html",
 "image":"img/noticias/bienvenida.jpg",
 "category":"Comunicado",
-"featured":true
+"featured":false
 },
 
 {
@@ -17,17 +27,5 @@
 "image":"img/noticias/elecciones.jpg",
 "category":"Elecciones",
 "featured":false
-}
-]
-
-[
-{
-"title":"La seguridad privada evoluciona hacia funciones críticas con mejores salarios",
-"date":"21 febrero 2026",
-"summary":"El sector de la seguridad privada evoluciona hacia funciones más técnicas y mejor remuneradas.",
-"url":"noticias/seguridad-privada-aumento-salarial.html",
-"image":"img/noticias/seguridad-privada.jpg",
-"category":"Información laboral",
-"featured":true
 }
 ]
