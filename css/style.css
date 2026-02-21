@@ -95,3 +95,28 @@ text-align:center;
 color:#aaa;
 margin-top:40px;
 }
+
+.featured-container{
+
+position:relative;
+height:400px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:end;
+
+}
+
+.featured-overlay{
+
+background:linear-gradient(transparent, black);
+padding:20px;
+width:100%;
+
+}
+
+.featured-overlay h2{
+
+margin:0;
+
+}
