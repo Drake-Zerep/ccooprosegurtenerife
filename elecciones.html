@@ -12,106 +12,60 @@
 
 <style>
 
-/* Diseño campaña electoral */
+body{
+background:#0b0d12;
+color:white;
+}
 
-.elecciones-page{
-
+.container{
 max-width:1100px;
 margin:auto;
 padding:30px;
-
 }
 
-.elecciones-header{
-
-border-bottom:4px solid #e30613;
+.titulo{
+border-bottom:3px solid #e30613;
+padding-bottom:10px;
 margin-bottom:30px;
-padding-bottom:15px;
-
 }
 
-.elecciones-header h1{
-
+.titulo h1{
 margin:0;
-font-size:34px;
-
-}
-
-.lema{
-
-font-size:20px;
-color:#e30613;
-margin-top:10px;
-
-}
-
-.bloque{
-
-background:#12151c;
-padding:25px;
-margin-bottom:25px;
-border-left:5px solid #e30613;
-
-}
-
-.bloque h2{
-
-margin-top:0;
-
-}
-
-.programa{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-
-}
-
-.propuesta{
-
-background:#1a1f29;
-padding:20px;
-border:1px solid #222;
-
 }
 
 .contador{
-
 background:#e30613;
 padding:15px;
 text-align:center;
-margin-bottom:30px;
 font-size:22px;
-font-weight:bold;
-
+margin-bottom:30px;
 }
 
-.cta{
-
-text-align:center;
-margin-top:30px;
-
+.bloque{
+background:#12151c;
+padding:20px;
+margin-bottom:20px;
+border-left:4px solid #e30613;
 }
 
-.boton-voto{
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
+.item{
+background:#1a1f29;
+padding:15px;
+}
+
+.boton{
 background:#e30613;
-color:white;
-padding:12px 30px;
-text-decoration:none;
-font-weight:bold;
+padding:10px 20px;
 display:inline-block;
-}
-
-@media(max-width:800px){
-
-.programa{
-
-grid-template-columns:1fr;
-
-}
-
+color:white;
+text-decoration:none;
+margin-top:15px;
 }
 
 </style>
@@ -129,8 +83,11 @@ grid-template-columns:1fr;
 <img src="img/logo.png">
 
 <div>
+
 <h1>CCOO Hábitat Prosegur Tenerife</h1>
+
 <span>Seguridad Privada · Santa Cruz de Tenerife</span>
+
 </div>
 
 </div>
@@ -150,20 +107,20 @@ grid-template-columns:1fr;
 </header>
 
 
-<main class="elecciones-page">
+<div class="container">
 
-<div class="elecciones-header">
+<div class="titulo">
 
 <h1>Elecciones Sindicales 2026</h1>
 
-<p class="lema">Compromiso, transparencia y defensa real de tus derechos.</p>
+<p>Información oficial de la candidatura de CCOO Hábitat</p>
 
 </div>
 
 
-<div class="contador" id="contador-elecciones">
+<div class="contador" id="contador">
 
-Cargando contador...
+Cargando información electoral...
 
 </div>
 
@@ -173,8 +130,10 @@ Cargando contador...
 <h2>Nuestro compromiso</h2>
 
 <p>
-Defender los derechos de los vigilantes de seguridad de Prosegur en Santa Cruz de Tenerife,
-garantizando transparencia, información clara y representación firme ante la empresa.
+
+Representar y defender los derechos de los vigilantes de seguridad con transparencia,
+responsabilidad y firmeza.
+
 </p>
 
 </div>
@@ -184,59 +143,55 @@ garantizando transparencia, información clara y representación firme ante la e
 
 <h2>Programa electoral</h2>
 
-<div class="programa">
+<div class="grid">
 
-<div class="propuesta">
-<h3>Mejora salarial</h3>
-<p>Vigilancia activa del cumplimiento del convenio y defensa de pluses y complementos.</p>
-</div>
+<div class="item">
 
-<div class="propuesta">
-<h3>Cuadrantes justos</h3>
-<p>Estabilidad en turnos, previsión horaria y respeto a descansos legales.</p>
-</div>
+<h3>Defensa de derechos</h3>
 
-<div class="propuesta">
-<h3>Permisos y conciliación</h3>
-<p>Aplicación correcta de permisos retribuidos y defensa de la conciliación familiar.</p>
-</div>
-
-<div class="propuesta">
-<h3>Transparencia</h3>
-<p>Información constante a través de esta web y comunicación directa con los trabajadores.</p>
-</div>
+<p>Vigilancia activa del cumplimiento laboral.</p>
 
 </div>
 
-</div>
+<div class="item">
 
+<h3>Mejora de cuadrantes</h3>
 
-<div class="bloque">
-
-<h2>Candidatura</h2>
-
-<p>
-La candidatura de CCOO Hábitat estará formada por trabajadores comprometidos con la defensa
-real y responsable de los derechos laborales.
-</p>
+<p>Estabilidad y previsión en turnos.</p>
 
 </div>
 
+<div class="item">
 
-<div class="cta">
+<h3>Información constante</h3>
 
-<a href="contacto.html" class="boton-voto">Contacta con nosotros</a>
+<p>Comunicación directa con los trabajadores.</p>
 
 </div>
 
+<div class="item">
 
-</main>
+<h3>Representación firme</h3>
+
+<p>Defensa ante cualquier irregularidad.</p>
+
+</div>
+
+</div>
+
+<a href="contacto.html" class="boton">Contactar</a>
+
+</div>
+
+</div>
 
 
 <footer>
 
-<p>
+<p style="text-align:center;padding:20px;color:#aaa;">
+
 CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
+
 </p>
 
 </footer>
@@ -244,29 +199,27 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 
 <script>
 
-// Ajusta la fecha cuando se conozca oficialmente
-const fechaElecciones = new Date("May 1, 2026 00:00:00");
+// Script seguro sin riesgo de bloqueo
 
-function actualizarContador(){
+var fecha = new Date("2026-05-01");
 
-const ahora = new Date();
-const diferencia = fechaElecciones - ahora;
+var hoy = new Date();
 
-if(diferencia <= 0){
-document.getElementById("contador-elecciones").innerText =
-"Hoy se celebran las elecciones sindicales.";
-return;
+var dias = Math.floor((fecha - hoy) / (1000*60*60*24));
+
+var texto = "";
+
+if(dias >= 0){
+
+texto = "Faltan " + dias + " días para las elecciones sindicales";
+
+}else{
+
+texto = "Proceso electoral en curso";
+
 }
 
-const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-
-document.getElementById("contador-elecciones").innerText =
-"Faltan " + dias + " días para las elecciones sindicales 2026";
-
-}
-
-actualizarContador();
-setInterval(actualizarContador, 60000);
+document.getElementById("contador").innerText = texto;
 
 </script>
 
