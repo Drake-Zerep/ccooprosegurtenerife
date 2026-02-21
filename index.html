@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>CCOO Hábitat Prosegur Tenerife</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -14,70 +15,74 @@
 
 <header class="header">
 
-<div class="logo-container">
-<img src="img/logo.png" class="logo">
+<div class="header-container">
+
+<div class="logo-area">
+
+<img src="img/logo.png">
+
 <div>
 <h1>CCOO Hábitat Prosegur Tenerife</h1>
-<p>Seguridad Privada · Santa Cruz de Tenerife</p>
+<span>Seguridad Privada · Santa Cruz de Tenerife</span>
 </div>
+
 </div>
 
 <nav>
-<a href="#">Inicio</a>
-<a href="#">Noticias</a>
-<a href="#">Comunicados</a>
-<a href="#">Elecciones sindicales 2026</a>
-<a href="#">Contacto</a>
+
+<a href="index.html">Inicio</a>
+<a href="noticias.html">Noticias</a>
+<a href="comunicados.html">Comunicados</a>
+<a href="elecciones.html" class="highlight">Elecciones 2026</a>
+<a href="contacto.html">Contacto</a>
+
 </nav>
+
+</div>
 
 </header>
 
 
-<main>
+<section class="breaking">
 
-<section class="hero">
-
-<h2>Información sindical para vigilantes de seguridad de Prosegur SYS SL</h2>
-
-<p>
-Noticias, comunicados y toda la información relevante para los trabajadores.
-</p>
+<span>INFORMACIÓN SINDICAL OFICIAL · PROSEGUR SYS SL · CCOO HÁBITAT</span>
 
 </section>
 
 
-<section class="news">
+<main class="main">
+
+
+<section class="featured">
+
+<h2>Noticia destacada</h2>
+
+<div id="featured-container"></div>
+
+</section>
+
+
+<section class="latest">
 
 <h2>Últimas noticias</h2>
 
-<div class="news-grid">
-
-<a href="noticias/noticia1.html" class="card">
-
-<h3>Bienvenidos a la web sindical</h3>
-
-<p>
-Esta web será el canal oficial de información de CCOO Hábitat en Prosegur Tenerife.
-</p>
-
-<span class="date">Publicado hoy</span>
-
-</a>
-
-
-</div>
+<div id="news-container" class="news-grid"></div>
 
 </section>
 
 
-<section class="elections">
+<section class="elections-banner">
 
 <h2>Elecciones sindicales 2026</h2>
 
 <p>
-Aquí se publicará toda la información relacionada con el proceso electoral sindical,
-candidaturas, comunicados y programa.
+
+CCOO Hábitat informa y representa a los vigilantes de seguridad.
+Consulta aquí toda la información electoral.
+
 </p>
+
+<a href="elecciones.html" class="button">Ver sección electoral</a>
 
 </section>
 
@@ -88,11 +93,16 @@ candidaturas, comunicados y programa.
 <footer>
 
 <p>
-CCOO Hábitat · Seguridad Privada · Prosegur Security · Santa Cruz de Tenerife
+
+CCOO Hábitat · Seguridad Privada  
+Prosegur SYS SL · Santa Cruz de Tenerife  
+
 </p>
 
 </footer>
 
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
