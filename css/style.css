@@ -120,3 +120,18 @@ width:100%;
 margin:0;
 
 }
+
+.election-counter{
+
+background:#e30613;
+padding:15px;
+text-align:center;
+
+}
+
+#countdown{
+
+font-size:24px;
+font-weight:bold;
+
+}
