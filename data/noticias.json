@@ -48,24 +48,14 @@
 "category":"Información laboral",
 "featured":false
 },
-  
-{
-"title":"Bienvenidos a la web sindical",
-"date":"21 febrero 2026",
-"summary":"Nueva plataforma oficial de información sindical.",
-"url":"noticias/bienvenida.html",
-"image":"img/noticias/bienvenida.jpg",
-"category":"Comunicado",
-"featured":false
-},
 
 {
-"title":"Elecciones sindicales 2026",
+"title":"El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes",
 "date":"21 febrero 2026",
-"summary":"Proceso electoral sindical próximo.",
-"url":"elecciones.html",
-"image":"img/noticias/elecciones.jpg",
-"category":"Elecciones",
+"summary":"El sector evoluciona hacia perfiles más técnicos con gestión de sistemas inteligentes y datos.",
+"url":"noticias/vigilante-seguridad-gestion-datos-sistemas-inteligentes.html",
+"image":"img/noticias/vigilante-tecnologia.jpg",
+"category":"Tecnología y seguridad",
 "featured":false
 }
 ]
