@@ -176,6 +176,8 @@ align-items:flex-end;
 
 height:50px;
 width:auto;
+transform: scale(1.8);
+transform-origin:left center;
 
 }
 
