@@ -325,3 +325,51 @@ padding:10px 0;
 }
 
 }
+
+/* BOTONES PRINCIPALES PORTADA */
+
+.acciones-principales{
+
+max-width:1200px;
+margin:30px auto;
+padding:0 20px;
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+
+}
+
+.boton-principal{
+
+padding:15px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:4px;
+transition:0.2s;
+text-align:center;
+min-width:250px;
+
+}
+
+.boton-principal.afiliate{
+
+background:#e30613;
+color:white;
+
+}
+
+.boton-principal.documentos{
+
+background:#1a1f29;
+color:white;
+border:2px solid #e30613;
+
+}
+
+.boton-principal:hover{
+
+transform:translateY(-2px);
+opacity:0.9;
+
+}
