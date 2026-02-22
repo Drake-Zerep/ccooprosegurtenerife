@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documentos | CCOO Hábitat Prosegur Tenerife</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.documentos-container{
+
+max-width:1000px;
+margin:auto;
+padding:30px 20px;
+
+}
+
+.documentos-header{
+
+border-bottom:3px solid #e30613;
+margin-bottom:30px;
+padding-bottom:10px;
+
+}
+
+.documentos-header h1{
+
+margin:0;
+font-size:32px;
+
+}
+
+.doc-card{
+
+background:#12151c;
+padding:20px;
+margin-bottom:15px;
+border-left:5px solid #e30613;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+
+}
+
+.doc-info{
+
+max-width:70%;
+
+}
+
+.doc-info h3{
+
+margin:0 0 5px 0;
+
+}
+
+.doc-info p{
+
+margin:0;
+color:#aaa;
+
+}
+
+.doc-button{
+
+background:#e30613;
+color:white;
+padding:8px 15px;
+text-decoration:none;
+
+}
+
+.doc-button:hover{
+
+opacity:0.8;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="header-banner">
+
+<img src="img/banner-header.png" class="banner-img">
+
+</div>
+
+<div class="header-menu">
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="menu">
+
+<a href="index.html">Inicio</a>
+<a href="noticias.html">Noticias</a>
+<a href="comunicados.html">Comunicados</a>
+<a href="elecciones.html">Elecciones 2026</a>
+<a href="derechos.html">Tus Derechos</a>
+<a href="seccion-sindical.html">Sección Sindical</a>
+<a href="documentos.html" class="highlight">Documentos</a>
+<a href="afiliate.html">Afíliate</a>
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<main class="documentos-container">
+
+<div class="documentos-header">
+
+<h1>Documentación oficial</h1>
+
+<p>Accede a normativa, convenios y documentos del sector de seguridad privada.</p>
+
+</div>
+
+
+<div class="doc-card">
+
+<div class="doc-info">
+
+<h3>Convenio Colectivo de Seguridad Privada</h3>
+
+<p>Convenio vigente del sector de seguridad privada.</p>
+
+</div>
+
+<a href="documentos/convenio-seguridad-privada.pdf" class="doc-button" target="_blank">
+
+Ver documento
+
+</a>
+
+</div>
+
+
+<div class="doc-card">
+
+<div class="doc-info">
+
+<h3>Ley Orgánica de Libertad Sindical</h3>
+
+<p>Normativa sobre derechos sindicales.</p>
+
+</div>
+
+<a href="documentos/ley-libertad-sindical.pdf" class="doc-button" target="_blank">
+
+Ver documento
+
+</a>
+
+</div>
+
+
+<div class="doc-card">
+
+<div class="doc-info">
+
+<h3>Reglamento de Seguridad Privada</h3>
+
+<p>Regulación de la actividad de seguridad privada.</p>
+
+</div>
+
+<a href="documentos/reglamento-seguridad-privada.pdf" class="doc-button" target="_blank">
+
+Ver documento
+
+</a>
+
+</div>
+
+
+<div class="doc-card">
+
+<div class="doc-info">
+
+<h3>Ley de Seguridad Privada</h3>
+
+<p>Ley que regula el sector de seguridad privada.</p>
+
+</div>
+
+<a href="documentos/ley-seguridad-privada.pdf" class="doc-button" target="_blank">
+
+Ver documento
+
+</a>
+
+</div>
+
+
+<div class="doc-card">
+
+<div class="doc-info">
+
+<h3>Tabla salarial 2026</h3>
+
+<p>Salarios actualizados del sector.</p>
+
+</div>
+
+<a href="documentos/tabla-salarial-2026.pdf" class="doc-button" target="_blank">
+
+Ver documento
+
+</a>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+<p style="text-align:center;padding:20px;color:#aaa;">
+
+CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
+
+</p>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
