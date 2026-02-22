@@ -220,3 +220,54 @@ font-weight:500;
 color:#e30613;
 
 }
+
+/* BANNER HEADER */
+
+.header-banner{
+
+max-width:1200px;
+margin:auto;
+padding:10px 20px;
+
+}
+
+.banner-img{
+
+width:100%;
+height:auto;
+display:block;
+
+}
+
+/* MENU */
+
+.header-menu{
+
+border-top:2px solid #e30613;
+border-bottom:2px solid #e30613;
+
+}
+
+.header-menu nav{
+
+max-width:1200px;
+margin:auto;
+padding:12px 20px;
+display:flex;
+gap:25px;
+
+}
+
+.header-menu nav a{
+
+color:white;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.header-menu nav a:hover{
+
+color:#e30613;
+
+}
