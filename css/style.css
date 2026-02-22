@@ -373,3 +373,24 @@ transform:translateY(-2px);
 opacity:0.9;
 
 }
+
+.categoria{
+
+cursor:pointer;
+padding:5px 0;
+color:#ccc;
+
+}
+
+.categoria:hover{
+
+color:#e30613;
+
+}
+
+.categoria.activa{
+
+color:#e30613;
+font-weight:bold;
+
+}
