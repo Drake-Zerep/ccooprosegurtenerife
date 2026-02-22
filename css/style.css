@@ -138,3 +138,83 @@ nav{
 margin-top:8px;
 
 }
+
+/* HEADER PROFESIONAL */
+
+.header-top{
+
+border-bottom:2px solid #e30613;
+padding:15px 20px;
+
+}
+
+.header-top-container{
+
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo-ccoo{
+
+height:50px;
+
+}
+
+.header-right{
+
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+
+}
+
+.logo-prosegur{
+
+height:40px;
+margin-bottom:5px;
+
+}
+
+.header-subtitle{
+
+color:#ccc;
+font-size:14px;
+
+}
+
+
+/* MENU */
+
+.header-menu{
+
+border-bottom:2px solid #e30613;
+
+}
+
+.header-menu nav{
+
+max-width:1200px;
+margin:auto;
+padding:12px 20px;
+display:flex;
+gap:20px;
+
+}
+
+.header-menu nav a{
+
+color:white;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.header-menu nav a:hover{
+
+color:#e30613;
+
+}
