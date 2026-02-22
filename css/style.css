@@ -5,21 +5,20 @@ background:#0b0d12;
 color:white;
 }
 
+/* HEADER */
+
 .header{
 background:#12151c;
 border-bottom:2px solid #e30613;
 }
 
 .header-container{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:15px 20px;
-
-border-top:2px solid #e30613;   /* NUEVA línea roja arriba */
-border-bottom:2px solid #e30613; /* línea roja abajo */
-
+border-top:2px solid #e30613;
+border-bottom:2px solid #e30613;
 }
 
 .logo-area{
@@ -47,27 +46,66 @@ color:#e30613;
 color:#e30613;
 }
 
+/* MAIN */
+
 .main{
 padding:30px;
+max-width:1200px;
+margin:auto;
 }
+
+/* GRID NOTICIAS CORREGIDO */
 
 .news-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(3, 1fr);
 gap:20px;
 }
 
+/* TARJETA NOTICIA */
+
 .card{
 background:#12151c;
-padding:20px;
 border:1px solid #222;
 cursor:pointer;
 transition:0.2s;
+overflow:hidden;
 }
 
 .card:hover{
 border:1px solid #e30613;
+transform:translateY(-3px);
 }
+
+/* IMAGEN NOTICIA */
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+display:block;
+}
+
+/* CONTENIDO */
+
+.card h3{
+font-size:16px;
+margin:10px;
+}
+
+.card p{
+font-size:14px;
+margin:10px;
+color:#ccc;
+}
+
+.card small{
+margin:10px;
+display:block;
+color:#888;
+}
+
+/* BOTONES */
 
 .button{
 display:inline-block;
@@ -85,6 +123,8 @@ background:#12151c;
 border-left:5px solid #e30613;
 }
 
+/* FOOTER */
+
 footer{
 background:#12151c;
 padding:20px;
@@ -93,243 +133,133 @@ color:#aaa;
 margin-top:40px;
 }
 
-.featured-container{
+/* NOTICIA PRINCIPAL */
 
+.featured-container{
 position:relative;
 height:400px;
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:end;
-
+cursor:pointer;
 }
 
 .featured-overlay{
-
 background:linear-gradient(transparent, black);
 padding:20px;
 width:100%;
-
 }
 
 .featured-overlay h2{
-
 margin:0;
-
 }
 
-.election-counter{
+/* CONTADOR */
 
+.election-counter{
 background:#e30613;
 padding:15px;
 text-align:center;
-
 }
 
 #countdown{
-
 font-size:24px;
 font-weight:bold;
-
-}
-
-nav{
-
-margin-top:8px;
-
 }
 
 /* HEADER PROFESIONAL */
 
 .header-top{
-
 border-bottom:2px solid #e30613;
 padding:15px 20px;
-
 }
 
 .header-top-container{
-
 max-width:1200px;
 margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 }
 
 .logo-ccoo{
-
 height:50px;
-
 }
 
 .header-right{
-
 display:flex;
 flex-direction:column;
 align-items:flex-end;
-
 }
 
 .logo-prosegur{
-
-height:50px;
+height:60px;
 width:auto;
-transform: scale(1.8);
-transform-origin:left center;
-
 }
 
 .header-subtitle{
-
 color:#ccc;
 font-size:14px;
-
 }
-
 
 /* MENU */
 
 .header-menu{
-
+border-top:2px solid #e30613;
 border-bottom:2px solid #e30613;
-
 }
 
 .header-menu nav{
-
 max-width:1200px;
 margin:auto;
 padding:12px 20px;
 display:flex;
-gap:20px;
-
+gap:25px;
 }
 
 .header-menu nav a{
-
 color:white;
 text-decoration:none;
 font-weight:500;
-
 }
 
 .header-menu nav a:hover{
-
 color:#e30613;
-
 }
 
-/* BANNER HEADER */
+/* BANNER */
 
 .header-banner{
-
 max-width:1200px;
 margin:auto;
 padding:10px 20px;
-
 }
 
 .banner-img{
-
 width:80%;
 height:auto;
 display:block;
 margin:auto;
-
 }
 
-/* MENU */
-
-.header-menu{
-
-border-top:2px solid #e30613;
-border-bottom:2px solid #e30613;
-
-}
-
-.header-menu nav{
-
-max-width:1200px;
-margin:auto;
-padding:12px 20px;
-display:flex;
-gap:25px;
-
-}
-
-.header-menu nav a{
-
-color:white;
-text-decoration:none;
-font-weight:500;
-
-}
-
-.header-menu nav a:hover{
-
-color:#e30613;
-
-}
-
-/* BOTON MENU MOVIL */
+/* MENU MOVIL */
 
 .menu-toggle{
-
 display:none;
 font-size:28px;
 cursor:pointer;
 padding:10px 20px;
-
 }
 
-/* MENU NORMAL */
-
 #menu{
-
 display:flex;
 gap:25px;
-
 }
 
-/* VERSION MOVIL */
-
-@media(max-width:768px){
-
-.menu-toggle{
-
-display:block;
-
-}
-
-#menu{
-
-display:none;
-flex-direction:column;
-background:#12151c;
-padding:10px 20px;
-
-}
-
-#menu.show{
-
-display:flex;
-
-}
-
-.header-menu nav a{
-
-padding:10px 0;
-
-}
-
-}
-
-/* BOTONES PRINCIPALES PORTADA */
+/* BOTONES PRINCIPALES */
 
 .acciones-principales{
-
 max-width:1200px;
 margin:30px auto;
 padding:0 20px;
@@ -337,11 +267,9 @@ display:flex;
 gap:20px;
 justify-content:center;
 flex-wrap:wrap;
-
 }
 
 .boton-principal{
-
 padding:15px 30px;
 text-decoration:none;
 font-weight:bold;
@@ -349,59 +277,85 @@ border-radius:4px;
 transition:0.2s;
 text-align:center;
 min-width:250px;
-
 }
 
 .boton-principal.afiliate{
-
 background:#e30613;
 color:white;
-
 }
 
 .boton-principal.documentos{
-
 background:#1a1f29;
 color:white;
 border:2px solid #e30613;
-
 }
 
 .boton-principal:hover{
-
 transform:translateY(-2px);
 opacity:0.9;
-
 }
 
-.categoria{
+/* CATEGORIAS */
 
+.categoria{
 cursor:pointer;
 padding:5px 0;
 color:#ccc;
-
 }
 
 .categoria:hover{
-
 color:#e30613;
-
 }
 
 .categoria.activa{
-
 color:#e30613;
 font-weight:bold;
-
 }
 
-.featured-label{
+/* BADGE */
 
+.featured-label{
 background:#e30613;
 display:inline-block;
 padding:4px 10px;
 font-size:12px;
 margin-bottom:10px;
 font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.news-grid{
+grid-template-columns:repeat(2, 1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.news-grid{
+grid-template-columns:1fr;
+}
+
+.menu-toggle{
+display:block;
+}
+
+#menu{
+display:none;
+flex-direction:column;
+background:#12151c;
+padding:10px 20px;
+}
+
+#menu.show{
+display:flex;
+}
+
+.header-menu nav a{
+padding:10px 0;
+}
 
 }
