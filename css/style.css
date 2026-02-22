@@ -174,8 +174,10 @@ align-items:flex-end;
 
 .logo-prosegur{
 
-height:40px;
-margin-bottom:5px;
+height:55px;
+width:auto;
+transform: scale(1.8);
+transform-origin:left center;
 
 }
 
