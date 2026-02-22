@@ -12,16 +12,6 @@
 
 </head>
 
-<script>
-
-function toggleMenu(){
-
-document.getElementById("menu").classList.toggle("show");
-
-}
-
-</script>
-  
 <body>
 
 <header class="header">
@@ -59,6 +49,8 @@ document.getElementById("menu").classList.toggle("show");
 </div>
 
 </header>
+
+
 <main class="main">
 
 <!-- NOTICIA DESTACADA -->
@@ -80,6 +72,9 @@ document.getElementById("menu").classList.toggle("show");
 
 </section>
 
+
+<!-- BOTONES PRINCIPALES -->
+
 <div class="acciones-principales">
 
 <a href="afiliate.html" class="boton-principal afiliate">
@@ -91,7 +86,8 @@ Ver Documentación Oficial
 </a>
 
 </div>
-  
+
+
 <!-- SECCIÓN ELECCIONES -->
 
 <section class="elections-banner">
@@ -107,7 +103,6 @@ Consulta aquí toda la información electoral.
 
 </section>
 
-
 </main>
 
 
@@ -120,9 +115,97 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </footer>
 
 
-<!-- SCRIPT NOTICIAS DINÁMICAS -->
+<!-- SCRIPT MENU MOVIL -->
 
-<script src="js/main.js"></script>
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+
+<!-- SCRIPT NOTICIAS AUTOMÁTICAS -->
+
+<script>
+
+fetch("data/noticias.json")
+
+.then(res => res.json())
+
+.then(data => {
+
+// ORDENAR por fecha (más reciente primero)
+
+data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+// CONTENEDORES
+
+const featuredContainer = document.getElementById("featured-container");
+
+const newsContainer = document.getElementById("news-container");
+
+// NOTICIA PRINCIPAL (primera)
+
+const principal = data[0];
+
+featuredContainer.style.backgroundImage = `url(${principal.image})`;
+
+featuredContainer.innerHTML = `
+
+<div class="featured-overlay">
+
+<div class="featured-label">NOTICIA PRINCIPAL</div>
+
+<h2>${principal.title}</h2>
+
+<p>${principal.summary}</p>
+
+<small>${principal.date} · ${principal.category}</small>
+
+</div>
+
+`;
+
+featuredContainer.onclick = () => location.href = principal.url;
+
+
+// RESTO DE NOTICIAS
+
+newsContainer.innerHTML = "";
+
+data.slice(1,7).forEach(news => {
+
+const card = document.createElement("div");
+
+card.className = "card";
+
+card.innerHTML = `
+
+<img src="${news.image}">
+
+<h3>${news.title}</h3>
+
+<p>${news.summary}</p>
+
+<small>${news.date} · ${news.category}</small>
+
+`;
+
+card.onclick = () => location.href = news.url;
+
+newsContainer.appendChild(card);
+
+});
+
+})
+
+.catch(error => console.error(error));
+
+</script>
 
 
 </body>
