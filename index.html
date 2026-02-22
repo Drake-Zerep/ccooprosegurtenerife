@@ -142,13 +142,16 @@ fetch("data/noticias.json")
 
 data.sort((a,b)=> new Date(b.date) - new Date(a.date));
 
-// CONTENEDORES
-
 const featuredContainer = document.getElementById("featured-container");
 
 const newsContainer = document.getElementById("news-container");
 
-// NOTICIA PRINCIPAL (primera)
+// LIMPIAR
+
+featuredContainer.innerHTML = "";
+newsContainer.innerHTML = "";
+
+// NOTICIA PRINCIPAL
 
 const principal = data[0];
 
@@ -157,8 +160,6 @@ featuredContainer.style.backgroundImage = `url(${principal.image})`;
 featuredContainer.innerHTML = `
 
 <div class="featured-overlay">
-
-<div class="featured-label">NOTICIA PRINCIPAL</div>
 
 <h2>${principal.title}</h2>
 
@@ -170,14 +171,18 @@ featuredContainer.innerHTML = `
 
 `;
 
-featuredContainer.onclick = () => location.href = principal.url;
+featuredContainer.style.cursor = "pointer";
+
+featuredContainer.onclick = () => {
+
+window.location.href = principal.url;
+
+};
 
 
 // RESTO DE NOTICIAS
 
-newsContainer.innerHTML = "";
-
-data.slice(1,7).forEach(news => {
+data.slice(1).forEach(news => {
 
 const card = document.createElement("div");
 
@@ -195,7 +200,11 @@ card.innerHTML = `
 
 `;
 
-card.onclick = () => location.href = news.url;
+card.onclick = () => {
+
+window.location.href = news.url;
+
+};
 
 newsContainer.appendChild(card);
 
@@ -206,7 +215,6 @@ newsContainer.appendChild(card);
 .catch(error => console.error(error));
 
 </script>
-
 
 </body>
 
