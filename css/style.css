@@ -272,3 +272,56 @@ font-weight:500;
 color:#e30613;
 
 }
+
+/* BOTON MENU MOVIL */
+
+.menu-toggle{
+
+display:none;
+font-size:28px;
+cursor:pointer;
+padding:10px 20px;
+
+}
+
+/* MENU NORMAL */
+
+#menu{
+
+display:flex;
+gap:25px;
+
+}
+
+/* VERSION MOVIL */
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+#menu{
+
+display:none;
+flex-direction:column;
+background:#12151c;
+padding:10px 20px;
+
+}
+
+#menu.show{
+
+display:flex;
+
+}
+
+.header-menu nav a{
+
+padding:10px 0;
+
+}
+
+}
