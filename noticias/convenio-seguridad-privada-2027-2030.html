@@ -1,47 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Firmado el convenio de seguridad privada 2027-2030</title>
+<title>Firmado el nuevo convenio estatal de seguridad privada 2027-2030</title>
 
 <link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+.article-container{
+max-width:900px;
+margin:auto;
+padding:30px 20px;
+}
+
+.article-image{
+width:100%;
+max-height:350px;
+object-fit:cover;
+border-radius:4px;
+margin:20px 0;
+}
+
+.article-title{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.article-meta{
+color:#aaa;
+margin-bottom:20px;
+}
+
+.article-content{
+line-height:1.7;
+color:#ddd;
+}
+
+.article-content p{
+margin-bottom:15px;
+}
+
+.article-navigation{
+display:flex;
+justify-content:space-between;
+margin-top:40px;
+gap:20px;
+}
+
+.nav-button{
+border:1px solid #e30613;
+padding:12px 18px;
+text-decoration:none;
+color:white;
+flex:1;
+text-align:center;
+transition:0.2s;
+}
+
+.nav-button:hover{
+background:#e30613;
+}
+
+</style>
 
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="header">
 
-<!-- BANNER -->
-
 <div class="header-banner">
-
-<img src="img/banner-header.png" class="banner-img">
-
+<img src="../img/banner-header.png" class="banner-img">
 </div>
-
-<!-- MENU -->
 
 <div class="header-menu">
 
-<div class="menu-toggle" onclick="toggleMenu()">
-☰
-</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <nav id="menu">
 
-<a href="index.html">Inicio</a>
-<a href="noticias.html">Noticias</a>
-<a href="comunicados.html">Comunicados</a>
-<a href="elecciones.html">Elecciones 2026</a>
-<a href="derechos.html">Tus Derechos</a>
-<a href="seccion-sindical.html">Sección Sindical</a>
-<a href="afiliate.html">Afíliate</a>
-<a href="documentos.html">Documentos</a>
-<a href="contacto.html">Contacto</a>
+<a href="../index.html">Inicio</a>
+<a href="../noticias.html">Noticias</a>
+<a href="../comunicados.html">Comunicados</a>
+<a href="../elecciones.html">Elecciones 2026</a>
+<a href="../derechos.html">Tus Derechos</a>
+<a href="../seccion-sindical.html">Sección Sindical</a>
+<a href="../afiliate.html">Afíliate</a>
+<a href="../documentos.html">Documentos</a>
+<a href="../contacto.html">Contacto</a>
 
 </nav>
 
@@ -49,13 +102,21 @@
 
 </header>
 
-<main class="main">
+<!-- ARTÍCULO -->
 
-<h2>Firmado el nuevo convenio estatal de seguridad privada 2027-2030</h2>
+<main class="article-container">
 
-<p><strong>21 febrero 2026 · Sección Sindical CCOO Hábitat Prosegur Tenerife</strong></p>
+<h1 class="article-title">
+Firmado el nuevo convenio estatal de seguridad privada 2027-2030
+</h1>
 
-<img src="../img/noticias/convenio-2027-2030.jpg" style="width:100%; margin:20px 0;">
+<div class="article-meta">
+Publicado: 21 febrero 2026 · CCOO Hábitat
+</div>
+
+<img src="../img/noticias/convenio-2027-2030.jpg" class="article-image">
+
+<div class="article-content">
 
 <p>
 El sector de la seguridad privada inicia una nueva etapa tras la firma del Convenio Colectivo Estatal 2027-2030, que regulará las condiciones laborales en los próximos años.
@@ -73,7 +134,68 @@ Este convenio establece el marco laboral de referencia para el conjunto del sect
 Desde CCOO Hábitat continuaremos trabajando para garantizar su correcta aplicación y la mejora de las condiciones laborales.
 </p>
 
+</div>
+
+<!-- NAVEGACIÓN ENTRE NOTICIAS -->
+
+<div class="article-navigation">
+
+<a id="prev-news" class="nav-button"></a>
+<a id="next-news" class="nav-button"></a>
+
+</div>
+
 </main>
+
+<footer>
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
+</p>
+</footer>
+
+<!-- SCRIPT MENU -->
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+<!-- SCRIPT NAVEGACIÓN AUTOMÁTICA -->
+
+<script>
+
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+.then(res=>res.json())
+.then(data=>{
+
+data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+
+const prevBtn = document.getElementById("prev-news");
+const nextBtn = document.getElementById("next-news");
+
+if(index < data.length - 1){
+prevBtn.innerHTML = "← Noticia anterior";
+prevBtn.href = "../" + data[index + 1].url;
+}else{
+prevBtn.style.display = "none";
+}
+
+if(index > 0){
+nextBtn.innerHTML = "Siguiente noticia →";
+nextBtn.href = "../" + data[index - 1].url;
+}else{
+nextBtn.style.display = "none";
+}
+
+})
+.catch(error=>console.error(error));
+
+</script>
 
 </body>
 </html>
