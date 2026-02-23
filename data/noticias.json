@@ -1,71 +1,72 @@
 [
 {
 "title":"CCOO denuncia graves irregularidades en el proceso electoral de PROSEGUR",
-"date":"22 febrero 2026",
+"date":"2026-02-22",
+"displayDate":"22 febrero 2026",
 "summary":"CCOO ha impugnado formalmente el proceso electoral tras detectar irregularidades graves que afectan a la legalidad y transparencia del procedimiento.",
 "url":"noticias/ccoo-denuncia-irregularidades-prosegur.html",
 "image":"img/noticias/irregularidades.png",
-"category":"Elecciones sindicales",
-"featured":false
+"category":"Elecciones sindicales"
 },
-  
+
 {
 "title":"Firmado el nuevo convenio estatal de seguridad privada 2027-2030 con mejoras laborales",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"El nuevo convenio establece incrementos salariales y mejoras laborales para el sector.",
 "url":"noticias/convenio-seguridad-privada-2027-2030.html",
 "image":"img/noticias/convenio-2027-2030.jpg",
-"category":"Convenio colectivo",
-"featured":false
+"category":"Convenio colectivo"
 },
-  
+
 {
 "title":"La seguridad privada evoluciona hacia funciones críticas con mejores salarios",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"El sector de la seguridad privada evoluciona hacia funciones más técnicas y mejor remuneradas.",
 "url":"noticias/seguridad-privada-aumento-salarial.html",
 "image":"img/noticias/seguridad-privada.jpg",
-"category":"Información laboral",
-"featured":true
+"category":"Información laboral"
 },
 
 {
 "title":"Inspección de Trabajo levanta actas de infracción grave a Prosegur por incumplimientos en permisos retribuidos",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"La Inspección de Trabajo detecta incumplimientos en la concesión de permisos retribuidos y gestión laboral.",
 "url":"noticias/inspeccion-infraccion-permisos-prosegur.html",
 "image":"img/noticias/inspeccion-prosegur.jpg",
-"category":"Información laboral",
-"featured":false
+"category":"Información laboral"
 },
 
 {
 "title":"La nueva ley de multirreincidencia refuerza el papel del vigilante de seguridad",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"La reforma penal refuerza el papel del vigilante en la prevención de delitos reincidentes.",
 "url":"noticias/ley-multirreincidencia-vigilantes.html",
 "image":"img/noticias/multirreincidencia.jpg",
-"category":"Información legal",
-"featured":false
+"category":"Información legal"
 },
 
 {
 "title":"La falta de vigilantes en España evidencia la crisis estructural del sector de la seguridad privada",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"La escasez de vigilantes refleja problemas estructurales relacionados con condiciones laborales y relevo generacional.",
 "url":"noticias/falta-vigilantes-seguridad-privada-espana.html",
 "image":"img/noticias/falta-vigilantes.jpg",
-"category":"Información laboral",
-"featured":false
+"category":"Información laboral"
 },
 
 {
 "title":"El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes",
-"date":"21 febrero 2026",
+"date":"2026-02-21",
+"displayDate":"21 febrero 2026",
 "summary":"El sector evoluciona hacia perfiles más técnicos con gestión de sistemas inteligentes y datos.",
 "url":"noticias/vigilante-seguridad-gestion-datos-sistemas-inteligentes.html",
 "image":"img/noticias/vigilante-tecnologia.jpg",
-"category":"Tecnología y seguridad",
-"featured":false
+"category":"Tecnología y seguridad"
 }
+
 ]
