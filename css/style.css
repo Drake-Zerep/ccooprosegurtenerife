@@ -359,3 +359,31 @@ padding:10px 0;
 }
 
 }
+
+.article-navigation{
+
+display:flex;
+justify-content:space-between;
+margin-top:40px;
+gap:20px;
+
+}
+
+.nav-button{
+
+background:#12151c;
+border:1px solid #e30613;
+padding:12px 20px;
+text-decoration:none;
+color:white;
+flex:1;
+text-align:center;
+transition:0.2s;
+
+}
+
+.nav-button:hover{
+
+background:#e30613;
+
+}
