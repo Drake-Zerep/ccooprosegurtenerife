@@ -12,7 +12,9 @@
 
 <style>
 
-.article{
+/* CONTENEDOR ARTICULO */
+
+.article-container{
 
 max-width:900px;
 margin:auto;
@@ -20,29 +22,47 @@ padding:30px 20px;
 
 }
 
-.article img{
+/* IMAGEN */
+
+.article-image{
 
 width:100%;
+max-height:450px;
+object-fit:cover;
+border-radius:4px;
 margin-bottom:20px;
 
 }
 
-.article h1{
+/* TITULO */
 
+.article-title{
+
+font-size:32px;
 margin-bottom:10px;
 
 }
 
-.article .date{
+/* FECHA */
+
+.article-meta{
 
 color:#aaa;
 margin-bottom:20px;
 
 }
 
-.article p{
+/* TEXTO */
+
+.article-content{
 
 line-height:1.7;
+color:#ddd;
+
+}
+
+.article-content p{
+
 margin-bottom:15px;
 
 }
@@ -53,35 +73,32 @@ margin-bottom:15px;
 
 <body>
 
-<header class="header">
 
-<!-- BANNER -->
+<!-- HEADER COMPLETO -->
+
+<header class="header">
 
 <div class="header-banner">
 
-<img src="img/banner-header.png" class="banner-img">
+<img src="../img/banner-header.png" class="banner-img">
 
 </div>
-
-<!-- MENU -->
 
 <div class="header-menu">
 
-<div class="menu-toggle" onclick="toggleMenu()">
-☰
-</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <nav id="menu">
 
-<a href="index.html">Inicio</a>
-<a href="noticias.html">Noticias</a>
-<a href="comunicados.html">Comunicados</a>
-<a href="elecciones.html">Elecciones 2026</a>
-<a href="derechos.html">Tus Derechos</a>
-<a href="seccion-sindical.html">Sección Sindical</a>
-<a href="afiliate.html">Afíliate</a>
-<a href="documentos.html">Documentos</a>
-<a href="contacto.html">Contacto</a>
+<a href="../index.html">Inicio</a>
+<a href="../noticias.html">Noticias</a>
+<a href="../comunicados.html">Comunicados</a>
+<a href="../elecciones.html">Elecciones 2026</a>
+<a href="../derechos.html">Tus Derechos</a>
+<a href="../seccion-sindical.html">Sección Sindical</a>
+<a href="../afiliate.html">Afíliate</a>
+<a href="../documentos.html">Documentos</a>
+<a href="../contacto.html">Contacto</a>
 
 </nav>
 
@@ -90,53 +107,72 @@ margin-bottom:15px;
 </header>
 
 
-<main class="article">
+<!-- ARTICULO -->
 
-<img src="../img/noticias/irregularidades.png">
+<main class="article-container">
 
-<h1>
+<img src="../img/noticias/irregularidades.png" class="article-image">
+
+
+<h1 class="article-title">
+
 CCOO denuncia graves irregularidades en el proceso electoral de PROSEGUR y exige la retroacción del procedimiento
+
 </h1>
 
-<div class="date">
+
+<div class="article-meta">
+
 Publicado: 22 febrero 2026 · CCOO Hábitat
+
 </div>
+
+
+<div class="article-content">
 
 <p>
 Comisiones Obreras Canarias ha presentado una impugnación formal ante la Oficina Pública Electoral tras constatar vicios graves en el proceso electoral celebrado en PROSEGUR Soluciones Integrales de Seguridad.
 </p>
 
 <p>
-La Mesa Electoral, en su resolución del 13 de agosto de 2025, excluyó la candidatura de CCOO alegando que estaba firmada “por orden”, una circunstancia que la propia normativa considera subsanable.
+La Mesa Electoral excluyó la candidatura de CCOO alegando una circunstancia que la normativa considera subsanable, sin conceder el plazo legal correspondiente.
 </p>
 
 <p>
-Tal y como recoge el documento presentado por nuestra organización, la Mesa Electoral debió conceder al sindicato CCOO un plazo para la subsanación de la candidatura al tratarse de un defecto subsanable. Sin embargo, la Mesa no solo omitió su obligación legal, sino que además ignoró el escrito de subsanación presentado ese mismo día por el Secretario General de CCOO del Hábitat.
+Además, se denunciaron irregularidades en candidaturas que no cumplían requisitos legales y en la composición de la Mesa Electoral.
 </p>
 
 <p>
-CCOO denunció también la presencia en la candidatura de otro sindicato de trabajadores que no cumplían el requisito mínimo de antigüedad exigido por la normativa electoral vigente, sin que esta reclamación fuera resuelta por la Mesa Electoral.
+Desde CCOO exigimos la retroacción del procedimiento, garantizando el respeto a los principios de igualdad, transparencia y legalidad.
 </p>
 
-<p>
-Asimismo, se detectaron irregularidades en el censo electoral y en la constitución de la Mesa, al comprobarse que uno de sus miembros no pertenecía al centro electoral.
-</p>
-
-<p>
-Desde CCOO exigimos la retroacción del procedimiento al momento de la proclamación de candidaturas, garantizando el respeto a los principios de igualdad, transparencia y legalidad en el proceso electoral.
-</p>
+</div>
 
 </main>
 
 
 <footer>
 
-<p style="text-align:center;padding:20px;color:#aaa;">
-CCOO Hábitat · Prosegur Tenerife
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </p>
 
 </footer>
 
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+
 </body>
+
+</html>
 
 </html>
