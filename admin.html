@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administrador de Noticias</title>
+
+<style>
+
+body{
+background:#0b0d12;
+color:white;
+font-family:Arial;
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+input, textarea, select{
+
+width:100%;
+padding:10px;
+margin-bottom:15px;
+background:#12151c;
+border:1px solid #333;
+color:white;
+
+}
+
+button{
+
+background:#e30613;
+color:white;
+padding:12px 20px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+pre{
+
+background:black;
+padding:15px;
+overflow:auto;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Publicador de Noticias</h1>
+
+Título:
+<input id="titulo">
+
+Fecha:
+<input id="fecha" placeholder="22 febrero 2026">
+
+Imagen:
+<input id="imagen" placeholder="mi-imagen.jpg">
+
+Categoría:
+<select id="categoria">
+
+<option>Información laboral</option>
+<option>Información legal</option>
+<option>Convenio colectivo</option>
+<option>Elecciones sindicales</option>
+<option>Tecnología y seguridad</option>
+
+</select>
+
+Contenido:
+<textarea id="contenido" rows="10"></textarea>
+
+<button onclick="generar()">GENERAR NOTICIA</button>
+
+<h2>HTML noticia:</h2>
+
+<pre id="html"></pre>
+
+<h2>Bloque noticias.json:</h2>
+
+<pre id="json"></pre>
+
+<script>
+
+function generar(){
+
+const titulo=document.getElementById("titulo").value;
+const fecha=document.getElementById("fecha").value;
+const imagen=document.getElementById("imagen").value;
+const categoria=document.getElementById("categoria").value;
+const contenido=document.getElementById("contenido").value;
+
+const slug=titulo
+.toLowerCase()
+.replaceAll(" ","-")
+.replace(/[^\w-]/g,"");
+
+const html=`<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>${titulo}</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="header">
+<div class="header-banner">
+<img src="../img/banner-header.png" class="banner-img">
+</div>
+</header>
+
+<main class="article-container">
+
+<h1>${titulo}</h1>
+
+<div class="article-meta">
+Publicado: ${fecha}
+</div>
+
+<img src="../img/noticias/${imagen}" class="article-image">
+
+<div class="article-content">
+<p>${contenido.replaceAll("\n","</p><p>")}</p>
+</div>
+
+</main>
+
+</body>
+</html>`;
+
+document.getElementById("html").textContent=html;
+
+const json=`{
+"title":"${titulo}",
+"date":"2026-02-22",
+"displayDate":"${fecha}",
+"summary":"${contenido.substring(0,120)}...",
+"url":"noticias/${slug}.html",
+"image":"img/noticias/${imagen}",
+"category":"${categoria}"
+},`;
+
+document.getElementById("json").textContent=json;
+
+}
+
+</script>
+
+</body>
+</html>
