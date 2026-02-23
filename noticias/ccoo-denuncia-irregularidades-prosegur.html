@@ -73,7 +73,52 @@ margin-bottom:15px;
 
 <body>
 
+<script>
 
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+const index = data.findIndex(n=>n.url.includes(currentPage));
+
+const prev = data[index+1];
+const next = data[index-1];
+
+const prevBtn = document.getElementById("prev-news");
+const nextBtn = document.getElementById("next-news");
+
+if(prev){
+
+prevBtn.innerHTML = "← Noticia anterior";
+prevBtn.href = "../" + prev.url;
+
+}else{
+
+prevBtn.style.visibility="hidden";
+
+}
+
+if(next){
+
+nextBtn.innerHTML = "Siguiente noticia →";
+nextBtn.href = "../" + next.url;
+
+}else{
+
+nextBtn.style.visibility="hidden";
+
+}
+
+});
+
+</script>
+  
 <!-- HEADER COMPLETO -->
 
 <header class="header">
