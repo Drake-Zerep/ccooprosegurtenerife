@@ -12,59 +12,37 @@
 
 <style>
 
-/* CONTENEDOR ARTICULO */
-
 .article-container{
-
 max-width:900px;
 margin:auto;
 padding:30px 20px;
-
 }
 
-/* IMAGEN */
-
 .article-image{
-
 width:100%;
 max-height:450px;
 object-fit:cover;
 border-radius:4px;
 margin-bottom:20px;
-
 }
-
-/* TITULO */
 
 .article-title{
-
 font-size:32px;
 margin-bottom:10px;
-
 }
-
-/* FECHA */
 
 .article-meta{
-
 color:#aaa;
 margin-bottom:20px;
-
 }
 
-/* TEXTO */
-
 .article-content{
-
 line-height:1.7;
 color:#ddd;
-
 }
 
 .article-content p{
-
 margin-bottom:15px;
-
 }
 
 </style>
@@ -73,60 +51,13 @@ margin-bottom:15px;
 
 <body>
 
-<script>
 
-const currentPage = window.location.pathname.split("/").pop();
-
-fetch("../data/noticias.json")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-data.sort((a,b)=> new Date(b.date) - new Date(a.date));
-
-const index = data.findIndex(n=>n.url.includes(currentPage));
-
-const prev = data[index+1];
-const next = data[index-1];
-
-const prevBtn = document.getElementById("prev-news");
-const nextBtn = document.getElementById("next-news");
-
-if(prev){
-
-prevBtn.innerHTML = "← Noticia anterior";
-prevBtn.href = "../" + prev.url;
-
-}else{
-
-prevBtn.style.visibility="hidden";
-
-}
-
-if(next){
-
-nextBtn.innerHTML = "Siguiente noticia →";
-nextBtn.href = "../" + next.url;
-
-}else{
-
-nextBtn.style.visibility="hidden";
-
-}
-
-});
-
-</script>
-  
-<!-- HEADER COMPLETO -->
+<!-- HEADER -->
 
 <header class="header">
 
 <div class="header-banner">
-
 <img src="../img/banner-header.png" class="banner-img">
-
 </div>
 
 <div class="header-menu">
@@ -158,20 +89,13 @@ nextBtn.style.visibility="hidden";
 
 <img src="../img/noticias/irregularidades.png" class="article-image">
 
-
 <h1 class="article-title">
-
 CCOO denuncia graves irregularidades en el proceso electoral de PROSEGUR y exige la retroacción del procedimiento
-
 </h1>
 
-
 <div class="article-meta">
-
 Publicado: 22 febrero 2026 · CCOO Hábitat
-
 </div>
-
 
 <div class="article-content">
 
@@ -193,6 +117,9 @@ Desde CCOO exigimos la retroacción del procedimiento, garantizando el respeto a
 
 </div>
 
+
+<!-- NAVEGACION -->
+
 <div class="article-navigation">
 
 <a id="prev-news" class="nav-button"></a>
@@ -213,6 +140,8 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </footer>
 
 
+<!-- SCRIPT MENU -->
+
 <script>
 
 function toggleMenu(){
@@ -223,6 +152,8 @@ document.getElementById("menu").classList.toggle("show");
 
 </script>
 
+
+<!-- SCRIPT NAVEGACION NOTICIAS -->
 
 <script>
 
@@ -263,12 +194,12 @@ nextBtn.style.display = "none";
 
 }
 
-});
+})
+
+.catch(error=>console.error(error));
 
 </script>
 
 
 </body>
-</html>
-
 </html>
