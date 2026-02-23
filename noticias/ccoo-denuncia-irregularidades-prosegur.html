@@ -224,8 +224,51 @@ document.getElementById("menu").classList.toggle("show");
 </script>
 
 
-</body>
+<script>
 
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+
+const prevBtn = document.getElementById("prev-news");
+const nextBtn = document.getElementById("next-news");
+
+if(index < data.length - 1){
+
+prevBtn.innerHTML = "← Noticia anterior";
+prevBtn.href = "../" + data[index + 1].url;
+
+}else{
+
+prevBtn.style.display = "none";
+
+}
+
+if(index > 0){
+
+nextBtn.innerHTML = "Siguiente noticia →";
+nextBtn.href = "../" + data[index - 1].url;
+
+}else{
+
+nextBtn.style.display = "none";
+
+}
+
+});
+
+</script>
+
+
+</body>
 </html>
 
 </html>
