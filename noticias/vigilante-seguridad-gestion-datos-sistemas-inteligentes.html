@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,23 +10,94 @@
 
 <link rel="stylesheet" href="../css/style.css">
 
+<style>
+
+.article-container{
+max-width:900px;
+margin:auto;
+padding:30px 20px;
+}
+
+.article-image{
+width:100%;
+max-height:450px;
+object-fit:cover;
+border-radius:4px;
+margin-bottom:20px;
+}
+
+.article-title{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.article-meta{
+color:#aaa;
+margin-bottom:20px;
+}
+
+.article-content{
+line-height:1.7;
+color:#ddd;
+}
+
+.article-content p{
+margin-bottom:15px;
+}
+
+</style>
+
 </head>
 
 <body>
 
+
+<!-- HEADER -->
+
 <header class="header">
-<div class="header-container">
-<h1>CCOO Hábitat Prosegur Tenerife</h1>
+
+<div class="header-banner">
+<img src="../img/banner-header.png" class="banner-img">
 </div>
+
+<div class="header-menu">
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="menu">
+
+<a href="../index.html">Inicio</a>
+<a href="../noticias.html">Noticias</a>
+<a href="../comunicados.html">Comunicados</a>
+<a href="../elecciones.html">Elecciones 2026</a>
+<a href="../derechos.html">Tus Derechos</a>
+<a href="../seccion-sindical.html">Sección Sindical</a>
+<a href="../afiliate.html">Afíliate</a>
+<a href="../documentos.html">Documentos</a>
+<a href="../contacto.html">Contacto</a>
+
+</nav>
+
+</div>
+
 </header>
 
-<main class="main">
 
-<h2>El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes y datos</h2>
+<!-- ARTICULO -->
 
-<p><strong>21 febrero 2026 · Sección Sindical CCOO Hábitat Prosegur Tenerife</strong></p>
+<main class="article-container">
 
-<img src="../img/noticias/vigilante-tecnologia.jpg" style="width:100%; margin:20px 0;">
+<img src="../img/noticias/vigilante-tecnologia.jpg" class="article-image">
+
+<h1 class="article-title">
+El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes y datos
+</h1>
+
+<div class="article-meta">
+Publicado: 22 febrero 2026 · CCOO Hábitat
+</div>
+
+<div class="article-content">
 
 <p>
 El sector de la seguridad privada está experimentando una transformación tecnológica que redefine el papel del vigilante de seguridad.
@@ -43,7 +115,91 @@ Esta evolución refuerza el papel del vigilante como un profesional técnico cla
 Desde CCOO Hábitat defendemos la formación, el reconocimiento profesional y la mejora de las condiciones laborales del sector.
 </p>
 
+</div>
+
+
+<!-- NAVEGACION -->
+
+<div class="article-navigation">
+
+<a id="prev-news" class="nav-button"></a>
+
+<a id="next-news" class="nav-button"></a>
+
+</div>
+
 </main>
+
+
+<footer>
+
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
+</p>
+
+</footer>
+
+
+<!-- SCRIPT MENU -->
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("show");
+
+}
+
+</script>
+
+
+<!-- SCRIPT NAVEGACION NOTICIAS -->
+
+<script>
+
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+
+.then(res=>res.json())
+
+.then(data=>{
+
+data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+
+const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+
+const prevBtn = document.getElementById("prev-news");
+const nextBtn = document.getElementById("next-news");
+
+if(index < data.length - 1){
+
+prevBtn.innerHTML = "← Noticia anterior";
+prevBtn.href = "../" + data[index + 1].url;
+
+}else{
+
+prevBtn.style.display = "none";
+
+}
+
+if(index > 0){
+
+nextBtn.innerHTML = "Siguiente noticia →";
+nextBtn.href = "../" + data[index - 1].url;
+
+}else{
+
+nextBtn.style.display = "none";
+
+}
+
+})
+
+.catch(error=>console.error(error));
+
+</script>
+
 
 </body>
 </html>
