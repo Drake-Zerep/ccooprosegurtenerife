@@ -44,6 +44,21 @@ font-style:italic;
 
 <body>
 
+<!-- BANNER COOKIES -->
+
+<div id="cookie-banner">
+
+<span>
+Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+</span>
+
+<button id="accept-cookies">
+Aceptar
+</button>
+
+</div>
+
+
 <header class="header">
 
 <!-- BANNER -->
@@ -161,21 +176,6 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </footer>
 
 
-<!-- BANNER COOKIES -->
-
-<div id="cookie-banner">
-
-<span>
-Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
-</span>
-
-<button id="accept-cookies">
-Aceptar
-</button>
-
-</div>
-
-
 <!-- MENU MOVIL -->
 
 <script>
@@ -224,19 +224,23 @@ setInterval(actualizarFechaHora,60000);
 
 <script>
 
-if(!localStorage.getItem("cookiesAceptadas")){
+document.addEventListener("DOMContentLoaded", function(){
 
-document.getElementById("cookie-banner").style.display="flex";
+const banner = document.getElementById("cookie-banner");
+const boton = document.getElementById("accept-cookies");
 
+if(localStorage.getItem("cookiesAceptadas")){
+banner.style.display="none";
 }
 
-document.getElementById("accept-cookies").onclick=function(){
+boton.onclick=function(){
 
 localStorage.setItem("cookiesAceptadas",true);
-
-document.getElementById("cookie-banner").style.display="none";
+banner.style.display="none";
 
 }
+
+});
 
 </script>
 
