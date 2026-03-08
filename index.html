@@ -48,13 +48,26 @@ font-style:italic;
 
 <div id="cookie-banner">
 
+<div class="cookie-content">
+  
 <span>
 Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+<a href="politica-cookies.html">Más información</a>
 </span>
+
+<div class="cookie-buttons">
 
 <button id="accept-cookies">
 Aceptar
 </button>
+
+<button id="reject-cookies">
+Rechazar
+</button>
+
+</div>
+
+</div>
 
 </div>
 
@@ -319,5 +332,34 @@ newsContainer.appendChild(card);
 
 </script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const banner = document.getElementById("cookie-banner");
+const accept = document.getElementById("accept-cookies");
+const reject = document.getElementById("reject-cookies");
+
+if(!localStorage.getItem("cookieConsent")){
+banner.style.display="flex";
+}
+
+accept.onclick=function(){
+
+localStorage.setItem("cookieConsent","accepted");
+banner.style.display="none";
+
+}
+
+reject.onclick=function(){
+
+localStorage.setItem("cookieConsent","rejected");
+banner.style.display="none";
+
+}
+
+});
+
+</script>
 </body>
 </html>
