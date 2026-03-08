@@ -8,16 +8,6 @@
 
 <title>CCOO Hábitat Prosegur Tenerife</title>
 
-<!-- COOKIEBOT (DEBE IR LO PRIMERO) -->
-<script
-id="Cookiebot"
-src="https://consent.cookiebot.com/uc.js"
-data-cbid="1855cbbf-0462-4e6b-aa34-3d2f6dad1622"
-data-blockingmode="auto"
-type="text/javascript"
-async>
-</script>
-
 <link rel="stylesheet" href="css/style.css">
 
 <style>
@@ -84,9 +74,7 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 
 <div class="header-menu">
 
-<div class="menu-toggle" onclick="toggleMenu()">
-☰
-</div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <nav id="menu">
 
@@ -173,6 +161,21 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </footer>
 
 
+<!-- BANNER COOKIES -->
+
+<div id="cookie-banner">
+
+<span>
+Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+</span>
+
+<button id="accept-cookies">
+Aceptar
+</button>
+
+</div>
+
+
 <!-- MENU MOVIL -->
 
 <script>
@@ -217,7 +220,28 @@ setInterval(actualizarFechaHora,60000);
 </script>
 
 
-<!-- NOTICIAS AUTOMATICAS -->
+<!-- SISTEMA COOKIES -->
+
+<script>
+
+if(!localStorage.getItem("cookiesAceptadas")){
+
+document.getElementById("cookie-banner").style.display="flex";
+
+}
+
+document.getElementById("accept-cookies").onclick=function(){
+
+localStorage.setItem("cookiesAceptadas",true);
+
+document.getElementById("cookie-banner").style.display="none";
+
+}
+
+</script>
+
+
+<!-- NOTICIAS AUTOMÁTICAS -->
 
 <script>
 
@@ -232,16 +256,16 @@ data.sort((a,b)=> new Date(b.date) - new Date(a.date));
 const featuredContainer = document.getElementById("featured-container");
 const newsContainer = document.getElementById("news-container");
 
-featuredContainer.innerHTML = "";
-newsContainer.innerHTML = "";
+featuredContainer.innerHTML="";
+newsContainer.innerHTML="";
 
 /* NOTICIA PRINCIPAL */
 
-const principal = data[0];
+const principal=data[0];
 
-featuredContainer.style.backgroundImage = `url(${principal.image})`;
+featuredContainer.style.backgroundImage=`url(${principal.image})`;
 
-featuredContainer.innerHTML = `
+featuredContainer.innerHTML=`
 
 <div class="featured-overlay">
 <h2>${principal.title}</h2>
@@ -251,30 +275,34 @@ featuredContainer.innerHTML = `
 
 `;
 
-featuredContainer.style.cursor = "pointer";
+featuredContainer.style.cursor="pointer";
 
-featuredContainer.onclick = () => {
-window.location.href = principal.url;
+featuredContainer.onclick=()=>{
+
+window.location.href=principal.url;
+
 };
 
 
 /* RESTO NOTICIAS */
 
-data.slice(1,7).forEach(news => {
+data.slice(1,7).forEach(news=>{
 
-const card = document.createElement("div");
+const card=document.createElement("div");
 
-card.className = "card";
+card.className="card";
 
-card.innerHTML = `
+card.innerHTML=`
 <img src="${news.image}">
 <h3>${news.title}</h3>
 <p>${news.summary}</p>
 <small>${news.date} · ${news.category}</small>
 `;
 
-card.onclick = () => {
-window.location.href = news.url;
+card.onclick=()=>{
+
+window.location.href=news.url;
+
 };
 
 newsContainer.appendChild(card);
@@ -283,7 +311,7 @@ newsContainer.appendChild(card);
 
 })
 
-.catch(error => console.error(error));
+.catch(error=>console.error(error));
 
 </script>
 
