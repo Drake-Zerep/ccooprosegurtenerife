@@ -394,3 +394,48 @@ text-align:center;
 margin-top:25px;
 
 }
+
+/* INFORMACION HEADER */
+
+.header-info{
+
+border-bottom:1px solid #333;
+
+}
+
+.header-info-container{
+
+max-width:1200px;
+margin:auto;
+padding:8px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#ccc;
+font-size:13px;
+
+}
+
+.fecha-web{
+
+color:#aaa;
+
+}
+
+.descripcion-web{
+
+font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+.header-info-container{
+
+flex-direction:column;
+gap:4px;
+text-align:center;
+
+}
+
+}
