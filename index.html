@@ -12,6 +12,22 @@
 
 </head>
 
+<script>
+
+const fecha = new Date();
+
+const opciones = {
+weekday: 'long',
+year: 'numeric',
+month: 'long',
+day: 'numeric'
+};
+
+document.getElementById("fecha-web").innerText =
+fecha.toLocaleDateString("es-ES", opciones);
+
+</script>
+
 <body>
 
 <header class="header">
