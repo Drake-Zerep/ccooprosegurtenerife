@@ -411,28 +411,25 @@ padding:6px 20px;
 
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
 
-gap:20px;
+gap:15px;
+
+font-size:14px;
+color:#ccc;
 
 }
 
 .fecha-web{
 
 color:#aaa;
-font-size:14px;
 white-space:nowrap;
 
 }
 
 .descripcion-web{
 
-color:#ccc;
-font-size:15px;
 font-style:italic;
-
-text-align:right;
-flex:1;
 
 }
 
@@ -444,13 +441,7 @@ flex:1;
 
 flex-direction:column;
 text-align:center;
-gap:4px;
-
-}
-
-.descripcion-web{
-
-text-align:center;
+gap:3px;
 
 }
 
