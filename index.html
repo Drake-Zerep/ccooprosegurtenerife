@@ -10,23 +10,45 @@
 
 <link rel="stylesheet" href="css/style.css">
 
+<style>
+
+/* INFO HEADER */
+
+.header-info{
+
+text-align:center;
+padding:10px 0;
+border-bottom:1px solid #333;
+
+}
+
+.header-info-container{
+
+max-width:1200px;
+margin:auto;
+
+}
+
+.fecha-web{
+
+color:#aaa;
+font-size:14px;
+margin-bottom:3px;
+
+}
+
+.descripcion-web{
+
+color:#ccc;
+font-size:16px;
+font-style:italic;
+
+}
+
+</style>
+
 </head>
 
-<script>
-
-const fecha = new Date();
-
-const opciones = {
-weekday: 'long',
-year: 'numeric',
-month: 'long',
-day: 'numeric'
-};
-
-document.getElementById("fecha-web").innerText =
-fecha.toLocaleDateString("es-ES", opciones);
-
-</script>
 
 <body>
 
@@ -39,6 +61,9 @@ fecha.toLocaleDateString("es-ES", opciones);
 <img src="img/banner-header.png" class="banner-img">
 
 </div>
+
+
+<!-- INFO WEB -->
 
 <div class="header-info">
 
@@ -53,6 +78,7 @@ Web informativa de la sección sindical de CCOO Hábitat en Prosegur Tenerife
 </div>
 
 </div>
+
 
 <!-- MENU -->
 
@@ -166,6 +192,25 @@ document.getElementById("menu").classList.toggle("show");
 </script>
 
 
+<!-- SCRIPT FECHA -->
+
+<script>
+
+const fecha = new Date();
+
+const opciones = {
+weekday: 'long',
+year: 'numeric',
+month: 'long',
+day: 'numeric'
+};
+
+document.getElementById("fecha-web").innerText =
+fecha.toLocaleDateString("es-ES", opciones);
+
+</script>
+
+
 <!-- SCRIPT NOTICIAS AUTOMÁTICAS -->
 
 <script>
@@ -176,20 +221,15 @@ fetch("data/noticias.json")
 
 .then(data => {
 
-// ORDENAR por fecha (más reciente primero)
-
 data.sort((a,b)=> new Date(b.date) - new Date(a.date));
 
 const featuredContainer = document.getElementById("featured-container");
-
 const newsContainer = document.getElementById("news-container");
-
-// LIMPIAR
 
 featuredContainer.innerHTML = "";
 newsContainer.innerHTML = "";
 
-// NOTICIA PRINCIPAL
+/* NOTICIA PRINCIPAL */
 
 const principal = data[0];
 
@@ -217,8 +257,7 @@ window.location.href = principal.url;
 
 };
 
-
-// RESTO DE NOTICIAS
+/* RESTO DE NOTICIAS */
 
 data.slice(1,7).forEach(news => {
 
