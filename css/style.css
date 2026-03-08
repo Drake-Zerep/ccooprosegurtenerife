@@ -445,4 +445,43 @@ gap:3px;
 
 }
 
+/* COOKIES */
+
+#cookie-banner{
+
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+
+background:#12151c;
+color:white;
+
+padding:15px;
+
+display:none;
+justify-content:center;
+align-items:center;
+
+gap:20px;
+
+border-top:2px solid #e30613;
+
+z-index:9999;
+
+}
+
+#cookie-banner button{
+
+background:#e30613;
+color:white;
+
+border:none;
+padding:8px 16px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
 }
