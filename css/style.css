@@ -407,33 +407,49 @@ border-bottom:1px solid #333;
 
 max-width:1200px;
 margin:auto;
-padding:8px 20px;
+padding:6px 20px;
+
 display:flex;
-justify-content:space-between;
 align-items:center;
-color:#ccc;
-font-size:13px;
+justify-content:space-between;
+
+gap:20px;
 
 }
 
 .fecha-web{
 
 color:#aaa;
+font-size:14px;
+white-space:nowrap;
 
 }
 
 .descripcion-web{
 
+color:#ccc;
+font-size:15px;
 font-style:italic;
 
+text-align:right;
+flex:1;
+
 }
+
+/* MOVIL */
 
 @media(max-width:768px){
 
 .header-info-container{
 
 flex-direction:column;
+text-align:center;
 gap:4px;
+
+}
+
+.descripcion-web{
+
 text-align:center;
 
 }
