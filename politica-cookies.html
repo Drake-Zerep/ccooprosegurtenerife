@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
-<title>Política de Cookies</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Política de Cookies | CCOO Hábitat Prosegur Tenerife</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -11,23 +14,98 @@
 
 <body>
 
-<div class="main">
+<header class="header">
+
+<div class="header-banner">
+<img src="img/banner-header.png" class="banner-img">
+</div>
+
+<div class="header-info">
+<div class="header-info-container">
+<h2>Política de Cookies</h2>
+</div>
+</div>
+
+<div class="header-menu">
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="menu">
+
+<a href="index.html">Inicio</a>
+<a href="noticias.html">Noticias</a>
+<a href="comunicados.html">Comunicados</a>
+<a href="elecciones.html">Elecciones 2026</a>
+<a href="derechos.html">Tus Derechos</a>
+<a href="seccion-sindical.html">Sección Sindical</a>
+<a href="afiliate.html">Afíliate</a>
+<a href="documentos.html">Documentos</a>
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="main">
 
 <h1>Política de Cookies</h1>
 
 <p>
-Este sitio web utiliza cookies técnicas necesarias para el funcionamiento del sitio.
+El presente sitio web utiliza cookies con el objetivo de mejorar la experiencia de navegación del usuario.
+</p>
+
+<h2>¿Qué son las cookies?</h2>
+
+<p>
+Las cookies son pequeños archivos de texto que se almacenan en el navegador del usuario cuando visita una página web. Sirven para recordar información sobre su visita.
+</p>
+
+<h2>Tipos de cookies utilizadas</h2>
+
+<ul>
+<li>Cookies técnicas necesarias para el funcionamiento del sitio web.</li>
+<li>Cookies de almacenamiento local relacionadas con el consentimiento de cookies.</li>
+</ul>
+
+<h2>Gestión de cookies</h2>
+
+<p>
+El usuario puede configurar su navegador para bloquear o eliminar las cookies instaladas en su dispositivo.
 </p>
 
 <p>
-Las cookies son pequeños archivos que se almacenan en su navegador para mejorar la experiencia de usuario.
+La mayoría de navegadores permiten gestionar las cookies a través de sus opciones de configuración.
+</p>
+
+<h2>Consentimiento</h2>
+
+<p>
+Al aceptar el aviso de cookies mostrado en este sitio web, el usuario consiente el uso de las cookies indicadas.
+</p>
+
+</main>
+
+<footer>
+
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur Security · Santa Cruz de Tenerife
 </p>
 
 <p>
-Puede configurar su navegador para bloquear o eliminar las cookies si lo desea.
+<a href="aviso-legal.html">Aviso legal</a> |
+<a href="politica-privacidad.html">Política de privacidad</a> |
+<a href="politica-cookies.html">Política de cookies</a>
 </p>
 
-</div>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
