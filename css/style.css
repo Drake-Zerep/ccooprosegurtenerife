@@ -54,7 +54,7 @@ max-width:1200px;
 margin:auto;
 }
 
-/* GRID NOTICIAS CORREGIDO */
+/* GRID NOTICIAS */
 
 .news-grid{
 display:grid;
@@ -77,16 +77,12 @@ border:1px solid #e30613;
 transform:translateY(-3px);
 }
 
-/* IMAGEN NOTICIA */
-
 .card img{
 width:100%;
 height:180px;
 object-fit:cover;
 display:block;
 }
-
-/* CONTENIDO */
 
 .card h3{
 font-size:16px;
@@ -155,52 +151,31 @@ width:100%;
 margin:0;
 }
 
-/* CONTADOR */
+/* HEADER INFO */
 
-.election-counter{
-background:#e30613;
-padding:15px;
-text-align:center;
+.header-info{
+border-bottom:1px solid #333;
 }
 
-#countdown{
-font-size:24px;
-font-weight:bold;
-}
-
-/* HEADER PROFESIONAL */
-
-.header-top{
-border-bottom:2px solid #e30613;
-padding:15px 20px;
-}
-
-.header-top-container{
+.header-info-container{
 max-width:1200px;
 margin:auto;
+padding:6px 20px;
 display:flex;
-justify-content:space-between;
 align-items:center;
-}
-
-.logo-ccoo{
-height:50px;
-}
-
-.header-right{
-display:flex;
-flex-direction:column;
-align-items:flex-end;
-}
-
-.logo-prosegur{
-height:60px;
-width:auto;
-}
-
-.header-subtitle{
-color:#ccc;
+justify-content:center;
+gap:15px;
 font-size:14px;
+color:#ccc;
+}
+
+.fecha-web{
+color:#aaa;
+white-space:nowrap;
+}
+
+.descripcion-web{
+font-style:italic;
 }
 
 /* MENU */
@@ -295,32 +270,73 @@ transform:translateY(-2px);
 opacity:0.9;
 }
 
-/* CATEGORIAS */
+/* NAVEGACION ARTICULOS */
 
-.categoria{
-cursor:pointer;
-padding:5px 0;
-color:#ccc;
+.article-navigation{
+display:flex;
+justify-content:space-between;
+margin-top:40px;
+gap:20px;
 }
 
-.categoria:hover{
-color:#e30613;
+.nav-button{
+background:#12151c;
+border:1px solid #e30613;
+padding:12px 20px;
+text-decoration:none;
+color:white;
+flex:1;
+text-align:center;
+transition:0.2s;
 }
 
-.categoria.activa{
-color:#e30613;
-font-weight:bold;
-}
-
-/* BADGE */
-
-.featured-label{
+.nav-button:hover{
 background:#e30613;
-display:inline-block;
-padding:4px 10px;
-font-size:12px;
-margin-bottom:10px;
+}
+
+.ver-mas-noticias{
+text-align:center;
+margin-top:25px;
+}
+
+/* COOKIES */
+
+#cookie-banner{
+
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+
+background:#12151c;
+color:white;
+
+padding:15px;
+
+display:none;
+justify-content:center;
+align-items:center;
+
+gap:20px;
+
+border-top:2px solid #e30613;
+
+z-index:9999;
+
+}
+
+#cookie-banner button{
+
+background:#e30613;
+color:white;
+
+border:none;
+padding:8px 16px;
+
+cursor:pointer;
+
 font-weight:bold;
+
 }
 
 /* RESPONSIVE */
@@ -358,130 +374,10 @@ display:flex;
 padding:10px 0;
 }
 
-}
-
-.article-navigation{
-
-display:flex;
-justify-content:space-between;
-margin-top:40px;
-gap:20px;
-
-}
-
-.nav-button{
-
-background:#12151c;
-border:1px solid #e30613;
-padding:12px 20px;
-text-decoration:none;
-color:white;
-flex:1;
-text-align:center;
-transition:0.2s;
-
-}
-
-.nav-button:hover{
-
-background:#e30613;
-
-}
-
-.ver-mas-noticias{
-
-text-align:center;
-margin-top:25px;
-
-}
-
-/* INFORMACION HEADER */
-
-.header-info{
-
-border-bottom:1px solid #333;
-
-}
-
 .header-info-container{
-
-max-width:1200px;
-margin:auto;
-padding:6px 20px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-gap:15px;
-
-font-size:14px;
-color:#ccc;
-
-}
-
-.fecha-web{
-
-color:#aaa;
-white-space:nowrap;
-
-}
-
-.descripcion-web{
-
-font-style:italic;
-
-}
-
-/* MOVIL */
-
-@media(max-width:768px){
-
-.header-info-container{
-
 flex-direction:column;
 text-align:center;
 gap:3px;
-
 }
 
-/* COOKIES */
-
-#cookie-banner{
-
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-
-background:#12151c;
-color:white;
-
-padding:15px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-gap:20px;
-
-border-top:2px solid #e30613;
-
-z-index:9999;
-
-}
-
-#cookie-banner button{
-
-background:#e30613;
-color:white;
-
-border:none;
-padding:8px 16px;
-
-cursor:pointer;
-
-font-weight:bold;
-
-}
 }
