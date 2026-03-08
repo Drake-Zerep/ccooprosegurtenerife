@@ -8,48 +8,43 @@
 
 <title>CCOO Hábitat Prosegur Tenerife</title>
 
-<link rel="stylesheet" href="css/style.css">
-
-<script id="Cookiebot"
+<!-- COOKIEBOT (DEBE IR LO PRIMERO) -->
+<script
+id="Cookiebot"
 src="https://consent.cookiebot.com/uc.js"
 data-cbid="1855cbbf-0462-4e6b-aa34-3d2f6dad1622"
 data-blockingmode="auto"
-type="text/javascript">
+type="text/javascript"
+async>
 </script>
+
+<link rel="stylesheet" href="css/style.css">
 
 <style>
 
 /* INFO HEADER */
 
 .header-info{
-
 text-align:center;
 padding:10px 0;
 border-bottom:1px solid #333;
-
 }
 
 .header-info-container{
-
 max-width:1200px;
 margin:auto;
-
 }
 
 .fecha-web{
-
 color:#aaa;
 font-size:14px;
 margin-bottom:3px;
-
 }
 
 .descripcion-web{
-
 color:#ccc;
 font-size:16px;
 font-style:italic;
-
 }
 
 </style>
@@ -64,9 +59,7 @@ font-style:italic;
 <!-- BANNER -->
 
 <div class="header-banner">
-
 <img src="img/banner-header.png" class="banner-img">
-
 </div>
 
 
@@ -119,9 +112,7 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 <!-- NOTICIA DESTACADA -->
 
 <section class="featured">
-
 <div id="featured-container" class="featured-container"></div>
-
 </section>
 
 
@@ -134,11 +125,7 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 <div id="news-container" class="news-grid"></div>
 
 <div class="ver-mas-noticias">
-
-<a href="noticias.html" class="button">
-Ver más noticias
-</a>
-
+<a href="noticias.html" class="button">Ver más noticias</a>
 </div>
 
 </section>
@@ -186,20 +173,18 @@ CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
 </footer>
 
 
-<!-- SCRIPT MENU MOVIL -->
+<!-- MENU MOVIL -->
 
 <script>
 
 function toggleMenu(){
-
 document.getElementById("menu").classList.toggle("show");
-
 }
 
 </script>
 
 
-<!-- SCRIPT FECHA -->
+<!-- FECHA + HORA -->
 
 <script>
 
@@ -227,13 +212,12 @@ fecha + " · " + hora;
 }
 
 actualizarFechaHora();
-
 setInterval(actualizarFechaHora,60000);
 
 </script>
 
 
-<!-- SCRIPT NOTICIAS AUTOMÁTICAS -->
+<!-- NOTICIAS AUTOMATICAS -->
 
 <script>
 
@@ -260,13 +244,9 @@ featuredContainer.style.backgroundImage = `url(${principal.image})`;
 featuredContainer.innerHTML = `
 
 <div class="featured-overlay">
-
 <h2>${principal.title}</h2>
-
 <p>${principal.summary}</p>
-
 <small>${principal.date} · ${principal.category}</small>
-
 </div>
 
 `;
@@ -274,12 +254,11 @@ featuredContainer.innerHTML = `
 featuredContainer.style.cursor = "pointer";
 
 featuredContainer.onclick = () => {
-
 window.location.href = principal.url;
-
 };
 
-/* RESTO DE NOTICIAS */
+
+/* RESTO NOTICIAS */
 
 data.slice(1,7).forEach(news => {
 
@@ -288,21 +267,14 @@ const card = document.createElement("div");
 card.className = "card";
 
 card.innerHTML = `
-
 <img src="${news.image}">
-
 <h3>${news.title}</h3>
-
 <p>${news.summary}</p>
-
 <small>${news.date} · ${news.category}</small>
-
 `;
 
 card.onclick = () => {
-
 window.location.href = news.url;
-
 };
 
 newsContainer.appendChild(card);
@@ -316,5 +288,4 @@ newsContainer.appendChild(card);
 </script>
 
 </body>
-
 </html>
