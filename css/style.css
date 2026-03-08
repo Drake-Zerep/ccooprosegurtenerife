@@ -299,7 +299,7 @@ text-align:center;
 margin-top:25px;
 }
 
-/* COOKIES */
+/* BANNER COOKIES PROFESIONAL */
 
 #cookie-banner{
 
@@ -309,33 +309,89 @@ left:0;
 width:100%;
 
 background:#12151c;
-color:white;
-
-padding:15px;
+border-top:3px solid #e30613;
 
 display:none;
 justify-content:center;
-align-items:center;
 
-gap:20px;
-
-border-top:2px solid #e30613;
+padding:20px;
 
 z-index:9999;
 
 }
 
-#cookie-banner button{
+.cookie-content{
+
+max-width:1200px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px;
+
+}
+
+.cookie-content span{
+
+color:#ccc;
+font-size:14px;
+
+}
+
+.cookie-content a{
+
+color:#e30613;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+.cookie-content a:hover{
+
+text-decoration:underline;
+
+}
+
+.cookie-buttons{
+
+display:flex;
+gap:10px;
+
+}
+
+.cookie-buttons button{
+
+padding:8px 16px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+#accept-cookies{
 
 background:#e30613;
 color:white;
 
-border:none;
-padding:8px 16px;
+}
 
-cursor:pointer;
+#reject-cookies{
 
-font-weight:bold;
+background:#1a1f29;
+color:white;
+border:1px solid #e30613;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.cookie-content{
+
+flex-direction:column;
+text-align:center;
+
+}
 
 }
 
