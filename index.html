@@ -49,21 +49,16 @@ font-style:italic;
 <div id="cookie-banner">
 
 <div class="cookie-content">
-  
+
 <span>
-Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.
+Las cookies de este sitio web se usan para personalizar el contenido y analizar el tráfico.
 <a href="politica-cookies.html">Más información</a>
 </span>
 
 <div class="cookie-buttons">
 
-<button id="accept-cookies">
-Aceptar
-</button>
-
-<button id="reject-cookies">
-Rechazar
-</button>
+<button id="accept-cookies">Aceptar</button>
+<button id="reject-cookies">Rechazar</button>
 
 </div>
 
@@ -74,14 +69,10 @@ Rechazar
 
 <header class="header">
 
-<!-- BANNER -->
-
 <div class="header-banner">
 <img src="img/banner-header.png" class="banner-img">
 </div>
 
-
-<!-- INFO WEB -->
 
 <div class="header-info">
 
@@ -97,8 +88,6 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 
 </div>
 
-
-<!-- MENU -->
 
 <div class="header-menu">
 
@@ -125,14 +114,10 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 
 <main class="main">
 
-<!-- NOTICIA DESTACADA -->
-
 <section class="featured">
 <div id="featured-container" class="featured-container"></div>
 </section>
 
-
-<!-- LISTADO DE NOTICIAS -->
 
 <section class="latest">
 
@@ -147,8 +132,6 @@ Web informativa de la sección sindical de CCOO Hábitat en la Delegación de Pr
 </section>
 
 
-<!-- BOTONES PRINCIPALES -->
-
 <div class="acciones-principales">
 
 <a href="afiliate.html" class="boton-principal afiliate">
@@ -161,8 +144,6 @@ Ver Documentación Oficial
 
 </div>
 
-
-<!-- SECCIÓN ELECCIONES -->
 
 <section class="elections-banner">
 
@@ -178,6 +159,34 @@ Consulta aquí toda la información electoral.
 </section>
 
 </main>
+
+
+
+<footer>
+
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur Security · Santa Cruz de Tenerife
+</p>
+
+<p>
+<a href="aviso-legal.html">Aviso legal</a> |
+<a href="politica-privacidad.html">Política de privacidad</a> |
+<a href="politica-cookies.html">Política de cookies</a>
+</p>
+
+<div class="contador-visitas">
+
+<p>Visitas a la web</p>
+
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com/" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21481706&style=0009&nbdigits=5&type=page&initCount=0" title="Contador de visitas" alt="contador visitas" border="0">
+</a>
+<!-- hitwebcounter Code END -->
+
+</div>
+
+</footer>
 
 
 
@@ -201,17 +210,17 @@ function actualizarFechaHora(){
 const ahora = new Date();
 
 const opciones = {
-weekday: 'long',
-year: 'numeric',
-month: 'long',
-day: 'numeric'
+weekday:'long',
+year:'numeric',
+month:'long',
+day:'numeric'
 };
 
-const fecha = ahora.toLocaleDateString("es-ES", opciones);
+const fecha = ahora.toLocaleDateString("es-ES",opciones);
 
-const hora = ahora.toLocaleTimeString("es-ES", {
-hour: '2-digit',
-minute: '2-digit'
+const hora = ahora.toLocaleTimeString("es-ES",{
+hour:'2-digit',
+minute:'2-digit'
 });
 
 document.getElementById("fecha-web").innerText =
@@ -229,20 +238,24 @@ setInterval(actualizarFechaHora,60000);
 
 <script>
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded",function(){
 
-const banner = document.getElementById("cookie-banner");
-const boton = document.getElementById("accept-cookies");
+const banner=document.getElementById("cookie-banner");
+const accept=document.getElementById("accept-cookies");
+const reject=document.getElementById("reject-cookies");
 
-if(localStorage.getItem("cookiesAceptadas")){
+if(localStorage.getItem("cookieConsent")){
 banner.style.display="none";
 }
 
-boton.onclick=function(){
-
-localStorage.setItem("cookiesAceptadas",true);
+accept.onclick=function(){
+localStorage.setItem("cookieConsent","accepted");
 banner.style.display="none";
+}
 
+reject.onclick=function(){
+localStorage.setItem("cookieConsent","rejected");
+banner.style.display="none";
 }
 
 });
@@ -256,19 +269,17 @@ banner.style.display="none";
 
 fetch("data/noticias.json")
 
-.then(res => res.json())
+.then(res=>res.json())
 
-.then(data => {
+.then(data=>{
 
 data.sort((a,b)=> new Date(b.date) - new Date(a.date));
 
-const featuredContainer = document.getElementById("featured-container");
-const newsContainer = document.getElementById("news-container");
+const featuredContainer=document.getElementById("featured-container");
+const newsContainer=document.getElementById("news-container");
 
 featuredContainer.innerHTML="";
 newsContainer.innerHTML="";
-
-/* NOTICIA PRINCIPAL */
 
 const principal=data[0];
 
@@ -287,13 +298,8 @@ featuredContainer.innerHTML=`
 featuredContainer.style.cursor="pointer";
 
 featuredContainer.onclick=()=>{
-
 window.location.href=principal.url;
-
 };
-
-
-/* RESTO NOTICIAS */
 
 data.slice(1,7).forEach(news=>{
 
@@ -309,9 +315,7 @@ card.innerHTML=`
 `;
 
 card.onclick=()=>{
-
 window.location.href=news.url;
-
 };
 
 newsContainer.appendChild(card);
@@ -324,57 +328,5 @@ newsContainer.appendChild(card);
 
 </script>
 
-<script>
-
-document.addEventListener("DOMContentLoaded", function(){
-
-const banner = document.getElementById("cookie-banner");
-const accept = document.getElementById("accept-cookies");
-const reject = document.getElementById("reject-cookies");
-
-if(!localStorage.getItem("cookieConsent")){
-banner.style.display="flex";
-}
-
-accept.onclick=function(){
-
-localStorage.setItem("cookieConsent","accepted");
-banner.style.display="none";
-
-}
-
-reject.onclick=function(){
-
-localStorage.setItem("cookieConsent","rejected");
-banner.style.display="none";
-
-}
-
-});
-
-</script>
-
-<footer>
-
-<p>
-CCOO Hábitat · Seguridad Privada · Prosegur Security · Santa Cruz de Tenerife
-</p>
-
-<p>
-<a href="aviso-legal.html">Aviso legal</a> |
-<a href="politica-privacidad.html">Política de privacidad</a> |
-<a href="politica-cookies.html">Política de cookies</a>
-</p>
-
-<div class="contador-visitas">
-
-<p>Visitas a la web</p>
-
-<script src="https://cdn.counter.dev/script.js" data-id="7ab7bb4a-7a74-4688-9e41-05cdda7cb8ab" data-utcoffset="0"></script>
-</a>
-
-</div> 
-</footer>
-  
 </body>
 </html>
