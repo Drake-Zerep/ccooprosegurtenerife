@@ -447,10 +447,13 @@ gap:3px;
 
 .contador-visitas{
 
-margin-top:10px;
-font-size:13px;
-color:#888;
+margin-top:15px;
+text-align:center;
 
 }
+
+.contador-visitas img{
+
+margin-top:5px;
 
 }
