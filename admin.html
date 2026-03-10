@@ -5,14 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Panel Administrador</title>
+<title>Panel Administrador Noticias</title>
+
+<link rel="stylesheet" href="css/style.css">
 
 <style>
 
 body{
 background:#0b0d12;
 color:white;
-font-family:Arial;
+font-family:Segoe UI,Arial;
 margin:0;
 }
 
@@ -20,16 +22,21 @@ margin:0;
 
 #login{
 max-width:400px;
-margin:100px auto;
+margin:120px auto;
 background:#12151c;
-padding:30px;
+padding:35px;
+border:1px solid #222;
 text-align:center;
+}
+
+#login h2{
+margin-bottom:20px;
 }
 
 input{
 width:100%;
 padding:10px;
-margin:10px 0;
+margin:8px 0;
 background:black;
 border:1px solid #333;
 color:white;
@@ -42,28 +49,44 @@ padding:10px;
 border:none;
 cursor:pointer;
 width:100%;
+margin-top:10px;
 }
 
 /* PANEL */
 
 #panel{
 display:none;
-max-width:900px;
+max-width:1000px;
 margin:auto;
-padding:20px;
+padding:40px 20px;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
 }
 
 textarea{
 width:100%;
-height:200px;
+height:220px;
 background:black;
 color:white;
+border:1px solid #333;
+padding:10px;
 }
 
 pre{
 background:black;
 padding:15px;
 overflow:auto;
+border:1px solid #333;
+margin-top:10px;
+}
+
+.generar{
+background:#e30613;
+margin-top:20px;
 }
 
 </style>
@@ -86,45 +109,47 @@ overflow:auto;
 </div>
 
 
-<!-- PANEL -->
+
+<!-- PANEL ADMIN -->
 
 <div id="panel">
 
-<h1>Publicar noticia</h1>
+<h1>Publicar nueva noticia</h1>
 
-Título:
+<label>Título</label>
 <input id="titulo">
 
-Fecha:
+<label>Fecha visible (ej: 8 marzo 2026)</label>
 <input id="fecha">
 
-Imagen:
-<input id="imagen">
+<label>Nombre de la imagen</label>
+<input id="imagen" placeholder="ejemplo: elecciones-prosegur.jpg">
 
-Categoría:
-<input id="categoria">
+<label>Categoría</label>
+<input id="categoria" placeholder="Información sindical">
 
-Contenido:
+<label>Contenido (un párrafo por línea)</label>
 <textarea id="contenido"></textarea>
 
-<button onclick="generar()">Generar</button>
+<button class="generar" onclick="generar()">Generar noticia</button>
 
-<h3>Archivo HTML:</h3>
+
+<h3>Archivo HTML para /noticias/</h3>
 <pre id="html"></pre>
 
-<h3>Bloque noticias.json:</h3>
+<h3>Bloque para noticias.json</h3>
 <pre id="json"></pre>
 
 </div>
 
 
+
 <script>
 
-/* CONFIGURAR USUARIO Y CONTRASEÑA */
+/* USUARIO */
 
 const USER="admin";
 const PASS="ccoo2026";
-
 
 function login(){
 
@@ -138,14 +163,15 @@ document.getElementById("panel").style.display="block";
 
 }else{
 
-alert("Acceso incorrecto");
+alert("Usuario o contraseña incorrectos");
 
 }
 
 }
 
 
-/* GENERADOR */
+
+/* GENERADOR DE NOTICIAS */
 
 function generar(){
 
@@ -155,50 +181,128 @@ const imagen=document.getElementById("imagen").value;
 const categoria=document.getElementById("categoria").value;
 const contenido=document.getElementById("contenido").value;
 
+
+/* SLUG SEO */
+
 const slug=titulo
 .toLowerCase()
-.replaceAll(" ","-")
-.replace(/[^\w-]/g,"");
+.normalize("NFD")
+.replace(/[\u0300-\u036f]/g,"")
+.replace(/[^a-z0-9 ]/g,"")
+.replace(/\s+/g,"-");
+
+
+/* CONVERTIR TEXTO EN PARRAFOS */
+
+const parrafos=contenido
+.split("\n")
+.map(p=>`<p>${p}</p>`)
+.join("\n");
+
+
+/* RESUMEN AUTOMATICO */
+
+const resumen=contenido.substring(0,140)+"...";
+
+
+/* HTML NOTICIA */
 
 const html=`<!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>${titulo}</title>
+
 <link rel="stylesheet" href="../css/style.css">
+
 </head>
+
 <body>
 
 <header class="header">
+
 <div class="header-banner">
-<img src="../img/banner-header.png">
+<img src="../img/banner-header.png" class="banner-img">
 </div>
+
+<div class="header-menu">
+
+<nav id="menu">
+
+<a href="../index.html">Inicio</a>
+<a href="../noticias.html">Noticias</a>
+<a href="../comunicados.html">Comunicados</a>
+<a href="../elecciones.html">Elecciones 2026</a>
+<a href="../derechos.html">Tus Derechos</a>
+<a href="../seccion-sindical.html">Sección Sindical</a>
+<a href="../afiliate.html">Afíliate</a>
+<a href="../documentos.html">Documentos</a>
+<a href="../contacto.html">Contacto</a>
+
+</nav>
+
+</div>
+
 </header>
+
 
 <main class="article-container">
 
-<h1>${titulo}</h1>
+<h1 class="article-title">${titulo}</h1>
+
+<div class="article-meta">
+${fecha} · ${categoria}
+</div>
 
 <img src="../img/noticias/${imagen}" class="article-image">
 
-<p>${contenido}</p>
+<div class="article-content">
+
+${parrafos}
+
+</div>
 
 </main>
+
+
+<footer>
+
+<p>
+CCOO Hábitat · Seguridad Privada · Prosegur Security · Santa Cruz de Tenerife
+</p>
+
+<p>
+<a href="../aviso-legal.html">Aviso legal</a> |
+<a href="../politica-privacidad.html">Política de privacidad</a> |
+<a href="../politica-cookies.html">Política de cookies</a>
+</p>
+
+</footer>
 
 </body>
 </html>`;
 
+
 document.getElementById("html").textContent=html;
+
+
+
+/* JSON */
 
 const json=`{
 "title":"${titulo}",
-"date":"2026-02-22",
+"date":"${new Date().toISOString().split("T")[0]}",
 "displayDate":"${fecha}",
-"summary":"${contenido.substring(0,120)}...",
+"summary":"${resumen}",
 "url":"noticias/${slug}.html",
 "image":"img/noticias/${imagen}",
 "category":"${categoria}"
 },`;
+
 
 document.getElementById("json").textContent=json;
 
