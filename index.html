@@ -234,28 +234,30 @@ setInterval(actualizarFechaHora,60000);
 </script>
 
 
-<!-- SISTEMA COOKIES -->
+<!-- SISTEMA COOKIES (SIEMPRE MOSTRAR) -->
 
 <script>
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function(){
 
-const banner=document.getElementById("cookie-banner");
-const accept=document.getElementById("accept-cookies");
-const reject=document.getElementById("reject-cookies");
+const banner = document.getElementById("cookie-banner");
+const accept = document.getElementById("accept-cookies");
+const reject = document.getElementById("reject-cookies");
 
-if(localStorage.getItem("cookieConsent")){
-banner.style.display="none";
+/* Mostrar siempre el banner al entrar */
+
+banner.style.display = "flex";
+
+/* Botón aceptar */
+
+accept.onclick = function(){
+banner.style.display = "none";
 }
 
-accept.onclick=function(){
-localStorage.setItem("cookieConsent","accepted");
-banner.style.display="none";
-}
+/* Botón rechazar */
 
-reject.onclick=function(){
-localStorage.setItem("cookieConsent","rejected");
-banner.style.display="none";
+reject.onclick = function(){
+banner.style.display = "none";
 }
 
 });
