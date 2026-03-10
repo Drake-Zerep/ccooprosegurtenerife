@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drake-zerep.github.io/ccooprosegurtenerife/sitemap.xml
