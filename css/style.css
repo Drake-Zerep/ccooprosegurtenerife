@@ -443,6 +443,21 @@ text-align:center;
 gap:3px;
 }
 
+.designer-credit{
+margin-top:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+font-size:13px;
+color:#aaa;
+}
+
+.designer-credit img{
+height:28px;
+width:auto;
+opacity:0.9;
+}
 }
 
 
