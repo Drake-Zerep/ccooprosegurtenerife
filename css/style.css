@@ -454,10 +454,10 @@ color:#aaa;
 }
 
 .designer-credit img{
-height:28px;
+height:20px;   /* tamaño del icono */
 width:auto;
 opacity:0.9;
 }
-}
 
+}
 
