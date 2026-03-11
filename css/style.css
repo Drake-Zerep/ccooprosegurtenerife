@@ -129,6 +129,25 @@ color:#aaa;
 margin-top:40px;
 }
 
+/* FIRMA DISEÑADOR */
+
+.designer-credit{
+margin-top:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+font-size:13px;
+color:#aaa;
+}
+
+.designer-credit img{
+height:20px;
+width:auto;
+max-width:20px;
+opacity:0.9;
+}
+
 /* NOTICIA PRINCIPAL */
 
 .featured-container{
@@ -299,107 +318,69 @@ text-align:center;
 margin-top:25px;
 }
 
-/* BANNER COOKIES PROFESIONAL */
+/* BANNER COOKIES */
 
 #cookie-banner{
-
 position:fixed;
 bottom:0;
 left:0;
 width:100%;
-
 background:#12151c;
 border-top:3px solid #e30613;
-
 display:none;
 justify-content:center;
-
 padding:20px;
-
 z-index:9999;
-
 }
 
 .cookie-content{
-
 max-width:1200px;
 margin:auto;
-
 display:flex;
 flex-direction:column;
-
 align-items:center;
 text-align:center;
-
 gap:12px;
-
 }
 
 .cookie-content span{
-
 color:#ccc;
 font-size:14px;
-
 }
 
 .cookie-content a{
-
 color:#e30613;
 text-decoration:none;
 font-weight:bold;
-
 }
 
 .cookie-content a:hover{
-
 text-decoration:underline;
-
 }
 
 .cookie-buttons{
-
 display:flex;
 gap:10px;
 justify-content:center;
 align-items:center;
-
 }
 
 .cookie-buttons button{
-
 padding:8px 16px;
 border:none;
 cursor:pointer;
 font-weight:bold;
-
 }
 
 #accept-cookies{
-
 background:#e30613;
 color:white;
-
 }
 
 #reject-cookies{
-
 background:#1a1f29;
 color:white;
 border:1px solid #e30613;
-
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-.cookie-content{
-
-flex-direction:column;
-text-align:center;
-
-}
-
 }
 
 /* RESPONSIVE */
@@ -443,20 +424,9 @@ text-align:center;
 gap:3px;
 }
 
-.designer-credit{
-margin-top:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-font-size:13px;
-color:#aaa;
-}
-
-.designer-credit img{
-height:20px;   /* tamaño del icono */
-width:auto;
-opacity:0.9;
+.cookie-content{
+flex-direction:column;
+text-align:center;
 }
 
 }
