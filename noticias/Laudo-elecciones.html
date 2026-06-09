@@ -9,23 +9,17 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-THD2GX50JQ');
 </script>
 
 <meta name="google-site-verification" content="ciypADkem7cbx9s-4eRfk-ek9qtXOpXjAEZNP6UWbms" />
-
 <meta name="description" content="Información sindical de CCOO Hábitat para vigilantes de seguridad en Prosegur Tenerife. Noticias laborales, derechos laborales y elecciones sindicales.">
-
 <meta name="keywords" content="CCOO Prosegur Tenerife, seguridad privada Tenerife, sindicato vigilantes seguridad, convenio seguridad privada">
-
 <meta name="author" content="CCOO Hábitat Prosegur Tenerife">
-
 <meta property="og:title" content="CCOO Hábitat Prosegur Tenerife">
 <meta property="og:description" content="Información sindical y laboral para vigilantes de seguridad en Tenerife.">
 <meta property="og:image" content="https://drake-zerep.github.io/ccooprosegurtenerife/img/banner-header.png">
 <meta property="og:type" content="website">
-  
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -35,70 +29,93 @@
 
 <style>
 
-/* CONTENEDOR */
-
-.article-container{
-max-width:900px;
-margin:auto;
-padding:30px 20px;
+.article-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
 }
 
-/* TITULO */
-
-.article-title{
-font-size:30px;
-margin-bottom:10px;
+.article-title {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-/* FECHA */
-
-.article-meta{
-color:#aaa;
-margin-bottom:20px;
+.article-meta {
+  color: #aaa;
+  margin-bottom: 20px;
 }
 
-/* IMAGEN */
-
-.article-image{
-width:100%;
-max-height:350px;
-object-fit:cover;
-border-radius:4px;
-margin:20px 0;
+.article-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 20px 0;
 }
 
-/* CONTENIDO */
-
-.article-content{
-line-height:1.7;
-color:#ddd;
+.article-content {
+  line-height: 1.7;
+  color: #ddd;
 }
 
-.article-content p{
-margin-bottom:15px;
+.article-content p {
+  margin-bottom: 15px;
 }
 
-/* NAVEGACION */
-
-.article-navigation{
-display:flex;
-justify-content:space-between;
-margin-top:40px;
-gap:20px;
+.article-content h2 {
+  color: #e30613;
+  font-size: 20px;
+  margin: 30px 0 10px 0;
+  border-left: 3px solid #e30613;
+  padding-left: 10px;
 }
 
-.nav-button{
-border:1px solid #e30613;
-padding:12px 18px;
-text-decoration:none;
-color:white;
-flex:1;
-text-align:center;
-transition:0.2s;
+.article-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
 
-.nav-button:hover{
-background:#e30613;
+.article-content ul li {
+  margin-bottom: 6px;
+  color: #ddd;
+}
+
+.article-content .destacado {
+  background: #1a1a1a;
+  border-left: 3px solid #e30613;
+  padding: 12px 16px;
+  margin: 15px 0;
+  color: #fff;
+  font-style: italic;
+}
+
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.nav-button {
+  border: 1px solid #e30613;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.nav-button:hover {
+  background: #e30613;
+}
+
+.article-author {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 14px;
 }
 
 </style>
@@ -111,29 +128,24 @@ background:#e30613;
 
 <header class="header">
 
-<div class="header-banner">
-<img src="../img/banner-header.png" class="banner-img">
-</div>
+  <div class="header-banner">
+    <img src="../img/banner-header.png" class="banner-img">
+  </div>
 
-<div class="header-menu">
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<nav id="menu">
-
-<a href="../index.html">Inicio</a>
-<a href="../noticias.html">Noticias</a>
-<a href="../comunicados.html">Comunicados</a>
-<a href="../elecciones.html">Elecciones 2026</a>
-<a href="../derechos.html">Tus Derechos</a>
-<a href="../seccion-sindical.html">Sección Sindical</a>
-<a href="../afiliate.html">Afíliate</a>
-<a href="../documentos.html">Documentos</a>
-<a href="../contacto.html">Contacto</a>
-
-</nav>
-
-</div>
+  <div class="header-menu">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../noticias.html">Noticias</a>
+      <a href="../comunicados.html">Comunicados</a>
+      <a href="../elecciones.html">Elecciones 2026</a>
+      <a href="../derechos.html">Tus Derechos</a>
+      <a href="../seccion-sindical.html">Sección Sindical</a>
+      <a href="../afiliate.html">Afíliate</a>
+      <a href="../documentos.html">Documentos</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
 
 </header>
 
@@ -141,220 +153,229 @@ background:#e30613;
 
 <main class="article-container">
 
-<h1 class="article-title">
-Prosegur, CCOO y USO-Canarias: el laudo que obliga a repetir una decisión clave en las elecciones sindicales
-</h1>
+  <h1 class="article-title">
+    Prosegur, CCOO y USO-Canarias: el laudo que obliga a repetir una decisión clave en las elecciones sindicales
+  </h1>
 
-<div class="article-meta">
-Publicado: 09 junio 2023 · CCOO Hábitat - Jaime A. Pérez D.
-</div>
+  <div class="article-meta">
+    Publicado: 09 junio 2026 · CCOO Hábitat - Jaime A. Pérez D.
+  </div>
 
-<img src="../img/noticias/laudo.png" class="article-image">
+  <img src="../img/noticias/laudo.png" class="article-image" alt="Laudo elecciones sindicales Prosegur">
 
-<div class="article-content">
+  <div class="article-content">
 
-<p>
-Las elecciones sindicales son uno de los procesos más importantes para los vigilantes de seguridad, ya que de ellas salen los representantes que defenderán los derechos de la plantilla durante los próximos años. Por eso, cualquier incidencia en una candidatura puede terminar llegando a arbitraje y tener consecuencias importantes.
+    <p>
+      Las elecciones sindicales son uno de los procesos más importantes para los vigilantes de seguridad, ya que de ellas salen los representantes que defenderán los derechos de la plantilla durante los próximos años. Por eso, cualquier incidencia en una candidatura puede terminar llegando a arbitraje y tener consecuencias importantes.
+    </p>
 
-Esto es precisamente lo que ha ocurrido en el proceso electoral de Prosegur Soluciones Integrales de Seguridad España, S.L., donde un árbitro electoral ha estimado parcialmente las reclamaciones presentadas por CCOO y USO-Canarias, anulando la exclusión definitiva de sus candidaturas y obligando a la Mesa Electoral a conceder un trámite de subsanación antes de tomar una decisión definitiva.
-</p>
+    <p>
+      Esto es precisamente lo que ha ocurrido en el proceso electoral de Prosegur Soluciones Integrales de Seguridad España, S.L., donde un árbitro electoral ha estimado parcialmente las reclamaciones presentadas por CCOO y USO-Canarias, anulando la exclusión definitiva de sus candidaturas y obligando a la Mesa Electoral a conceder un trámite de subsanación antes de tomar una decisión definitiva.
+    </p>
 
-<p>
-<h1><b>¿Qué ocurrió?</b></h1>
 
-El conflicto surge durante el proceso de elecciones sindicales en Prosegur, concretamente en la agrupación de centros de trabajo afectada por el preaviso electoral correspondiente. La Mesa Electoral había acordado excluir determinadas candidaturas presentadas por CCOO y USO-Canarias al detectar defectos formales relacionados con la documentación presentada.
+    <h2>¿Qué ocurrió?</h2>
 
-Entre los motivos alegados se encontraban cuestiones relativas a:
+    <p>
+      El conflicto surge durante el proceso de elecciones sindicales en Prosegur, concretamente en la agrupación de centros de trabajo afectada por el preaviso electoral correspondiente. La Mesa Electoral había acordado excluir determinadas candidaturas presentadas por CCOO y USO-Canarias al detectar defectos formales relacionados con la documentación presentada.
+    </p>
 
-La validez de determinadas firmas.
-La representación legal de quienes presentaron las candidaturas.
-El número de candidatos incluidos.
-Diversas incidencias documentales detectadas durante la proclamación de candidaturas.
+    <p>Entre los motivos alegados se encontraban cuestiones relativas a:</p>
 
-Tras la exclusión, ambos sindicatos presentaron impugnaciones ante la Oficina Pública Electoral, lo que dio lugar al procedimiento arbitral.
-</p>
+    <ul>
+      <li>La validez de determinadas firmas.</li>
+      <li>La representación legal de quienes presentaron las candidaturas.</li>
+      <li>El número de candidatos incluidos.</li>
+      <li>Diversas incidencias documentales detectadas durante la proclamación de candidaturas.</li>
+    </ul>
 
-<p>
-<h1><b>La cuestión principal: ¿podía la Mesa Electoral excluir directamente las candidaturas?</b></h1>
+    <p>
+      Tras la exclusión, ambos sindicatos presentaron impugnaciones ante la Oficina Pública Electoral, lo que dio lugar al procedimiento arbitral.
+    </p>
 
-Aunque durante el procedimiento se plantearon distintos debates, el árbitro centra la controversia en una cuestión fundamental:
 
-<b>¿Puede una Mesa Electoral excluir definitivamente una candidatura por defectos formales sin dar antes la oportunidad de corregirlos?</b>
+    <h2>La cuestión principal: ¿podía la Mesa Electoral excluir directamente las candidaturas?</h2>
 
-La respuesta del laudo es clara:
+    <p>
+      Aunque durante el procedimiento se plantearon distintos debates, el árbitro centra la controversia en una cuestión fundamental:
+    </p>
 
-No, cuando esos defectos son subsanables debe concederse previamente un trámite para corregirlos.
-</p>
+    <div class="destacado">
+      ¿Puede una Mesa Electoral excluir definitivamente una candidatura por defectos formales sin dar antes la oportunidad de corregirlos?
+    </div>
 
-<p>
-<h1><b>El principio que protege la libertad sindical</b></h1>
+    <p>
+      La respuesta del laudo es clara: <strong>no</strong>. Cuando esos defectos son subsanables debe concederse previamente un trámite para corregirlos.
+    </p>
 
-El árbitro fundamenta gran parte de su decisión en la doctrina del Tribunal Constitucional.
 
-Según dicha doctrina, las normas electorales deben interpretarse de manera que favorezcan el ejercicio del derecho fundamental de libertad sindical y la participación en los procesos electorales. Por ello, cuando existe un defecto documental que puede corregirse, la exclusión automática resulta desproporcionada.
+    <h2>El principio que protege la libertad sindical</h2>
 
-El laudo recuerda que:
+    <p>
+      El árbitro fundamenta gran parte de su decisión en la doctrina del Tribunal Constitucional. Según dicha doctrina, las normas electorales deben interpretarse de manera que favorezcan el ejercicio del derecho fundamental de libertad sindical y la participación en los procesos electorales. Por ello, cuando existe un defecto documental que puede corregirse, la exclusión automática resulta desproporcionada.
+    </p>
 
-La finalidad del procedimiento electoral es garantizar la representación de los trabajadores.
-Los defectos puramente formales no deben prevalecer sobre el derecho de participación sindical.
-La Mesa Electoral debe favorecer la corrección de errores cuando ello sea posible.
+    <p>El laudo recuerda que:</p>
 
-En otras palabras, el árbitro considera que la Mesa Electoral no puede actuar con un formalismo excesivo cuando existen mecanismos para subsanar la documentación presentada.
-</p>
+    <ul>
+      <li>La finalidad del procedimiento electoral es garantizar la representación de los trabajadores.</li>
+      <li>Los defectos puramente formales no deben prevalecer sobre el derecho de participación sindical.</li>
+      <li>La Mesa Electoral debe favorecer la corrección de errores cuando ello sea posible.</li>
+    </ul>
 
-<p>
-<h1><b>¿Qué defectos consideró el árbitro que podían corregirse?</b></h1>
+    <p>
+      En otras palabras, el árbitro considera que la Mesa Electoral no puede actuar con un formalismo excesivo cuando existen mecanismos para subsanar la documentación presentada.
+    </p>
 
-Uno de los puntos más relevantes del laudo es que los defectos detectados no fueron considerados insubsanables.
 
-El árbitro señala que no se trataba de situaciones como:
+    <h2>¿Qué defectos consideró el árbitro que podían corregirse?</h2>
 
-La inexistencia total de candidatura.
-La falta absoluta de identificación de los candidatos.
-La ausencia de voluntad de concurrir a las elecciones.
-Casos de fraude o irregularidades graves.
+    <p>
+      Uno de los puntos más relevantes del laudo es que los defectos detectados no fueron considerados insubsanables. El árbitro señala que no se trataba de situaciones como:
+    </p>
 
-Por el contrario, las incidencias estaban relacionadas con aspectos documentales y de acreditación que podían ser aclarados o corregidos mediante la aportación de documentación complementaria.
+    <ul>
+      <li>La inexistencia total de candidatura.</li>
+      <li>La falta absoluta de identificación de los candidatos.</li>
+      <li>La ausencia de voluntad de concurrir a las elecciones.</li>
+      <li>Casos de fraude o irregularidades graves.</li>
+    </ul>
 
-Además, consta que los sindicatos reaccionaron inmediatamente tras conocer la exclusión, aportando escritos aclaratorios y documentación adicional para justificar la validez de sus candidaturas.
-</p>
+    <p>
+      Por el contrario, las incidencias estaban relacionadas con aspectos documentales y de acreditación que podían ser aclarados o corregidos mediante la aportación de documentación complementaria. Además, consta que los sindicatos reaccionaron inmediatamente tras conocer la exclusión, aportando escritos aclaratorios y documentación adicional para justificar la validez de sus candidaturas.
+    </p>
 
-<p>
-<h1><b>¿Qué dice el árbitro sobre las firmas cuestionadas?</b></h1>
 
-Uno de los elementos discutidos era la existencia de firmas realizadas "por orden" o mediante representantes sindicales autorizados.
+    <h2>¿Qué dice el árbitro sobre las firmas cuestionadas?</h2>
 
-El árbitro destaca que existía documentación que acreditaba esa representación y que, además, el número de avales o apoyos seguía siendo suficiente para cumplir los requisitos legales incluso sin entrar a valorar algunas de las firmas cuestionadas.
+    <p>
+      Uno de los elementos discutidos era la existencia de firmas realizadas "por orden" o mediante representantes sindicales autorizados. El árbitro destaca que existía documentación que acreditaba esa representación y que, además, el número de avales o apoyos seguía siendo suficiente para cumplir los requisitos legales incluso sin entrar a valorar algunas de las firmas cuestionadas.
+    </p>
 
-Por ello, considera que estas circunstancias no justificaban por sí mismas una exclusión definitiva sin permitir previamente la subsanación correspondiente.
-</p>
+    <p>
+      Por ello, considera que estas circunstancias no justificaban por sí mismas una exclusión definitiva sin permitir previamente la subsanación correspondiente.
+    </p>
 
-<p>
-<h1><b>La crítica a la actuación de la Mesa Electoral</b></h1>
 
-El laudo es especialmente contundente en este aspecto.
+    <h2>La crítica a la actuación de la Mesa Electoral</h2>
 
-Según el árbitro, la Mesa Electoral debió conceder un trámite de subsanación antes de acordar la exclusión definitiva de las candidaturas.
+    <p>
+      El laudo es especialmente contundente en este aspecto. Según el árbitro, la Mesa Electoral debió conceder un trámite de subsanación antes de acordar la exclusión definitiva de las candidaturas.
+    </p>
 
-La decisión adoptada restringió de forma desproporcionada el derecho de participación sindical y se apartó del criterio establecido por la jurisprudencia constitucional en materia electoral.
+    <p>
+      La decisión adoptada restringió de forma desproporcionada el derecho de participación sindical y se apartó del criterio establecido por la jurisprudencia constitucional en materia electoral. El árbitro recuerda que el deber de permitir la subsanación no es una facultad opcional de la Mesa, sino una obligación cuando los defectos detectados pueden corregirse.
+    </p>
 
-El árbitro recuerda que el deber de permitir la subsanación no es una facultad opcional de la Mesa, sino una obligación cuando los defectos detectados pueden corregirse.
-</p>
 
-<p>
-<h1><b>¿Qué efectos tiene el laudo?</b></h1>
+    <h2>¿Qué efectos tiene el laudo?</h2>
 
-El árbitro no proclama directamente válidas las candidaturas de CCOO y USO-Canarias.
+    <p>El árbitro no proclama directamente válidas las candidaturas de CCOO y USO-Canarias. Lo que hace es algo distinto:</p>
 
-Lo que hace es algo distinto:
+    <ul>
+      <li>Estimar parcialmente las impugnaciones.</li>
+      <li>Anular la exclusión definitiva acordada por la Mesa Electoral.</li>
+      <li>Retrotraer las actuaciones al momento anterior a la exclusión.</li>
+      <li>Obligar a la Mesa Electoral a abrir un trámite de subsanación.</li>
+      <li>Exigir que, una vez analizada la documentación que se aporte, dicte una nueva resolución respetando la doctrina constitucional.</li>
+    </ul>
 
-Estimar parcialmente las impugnaciones.
-Anular la exclusión definitiva acordada por la Mesa Electoral.
-Retrotraer las actuaciones al momento anterior a la exclusión.
-Obligar a la Mesa Electoral a abrir un trámite de subsanación.
-Exigir que, una vez analizada la documentación que se aporte, dicte una nueva resolución respetando la doctrina constitucional.
+    <p>
+      Por tanto, el procedimiento vuelve a una fase anterior para que las organizaciones sindicales puedan corregir o aclarar la documentación cuestionada.
+    </p>
 
-Por tanto, el procedimiento vuelve a una fase anterior para que las organizaciones sindicales puedan corregir o aclarar la documentación cuestionada.
-</p>
 
-<p>
-<h1><b>¿Qué significa esto para los vigilantes de seguridad?</b></h1>
+    <h2>¿Qué significa esto para los vigilantes de seguridad?</h2>
 
-Este laudo deja una enseñanza importante para cualquier trabajador que participe en procesos electorales sindicales:
+    <p>
+      Este laudo deja una enseñanza importante para cualquier trabajador que participe en procesos electorales sindicales: la voluntad de participación de una candidatura no puede quedar anulada por simples defectos formales cuando estos son corregibles.
+    </p>
 
-La voluntad de participación de una candidatura no puede quedar anulada por simples defectos formales cuando estos son corregibles.
+    <p>
+      La resolución refuerza la idea de que las elecciones sindicales deben interpretarse desde una perspectiva garantista, favoreciendo la participación y evitando que cuestiones meramente administrativas impidan a los trabajadores elegir libremente entre las distintas opciones sindicales.
+    </p>
 
-La resolución refuerza la idea de que las elecciones sindicales deben interpretarse desde una perspectiva garantista, favoreciendo la participación y evitando que cuestiones meramente administrativas impidan a los trabajadores elegir libremente entre las distintas opciones sindicales.
+    <p>
+      También recuerda a las Mesas Electorales que su función no consiste únicamente en controlar el cumplimiento formal de las normas, sino en garantizar que el proceso electoral se desarrolle respetando plenamente los derechos fundamentales de representación y libertad sindical.
+    </p>
 
-También recuerda a las Mesas Electorales que su función no consiste únicamente en controlar el cumplimiento formal de las normas, sino en garantizar que el proceso electoral se desarrolle respetando plenamente los derechos fundamentales de representación y libertad sindical.
-</p>
 
-<p>
-<h1><b>Conclusión</b></h1>
+    <h2>Conclusión</h2>
 
-El laudo dictado en el proceso electoral de Prosegur no decide quién tiene razón sobre el fondo de todas las cuestiones planteadas. Lo que sí establece con claridad es que CCOO y USO-Canarias debieron tener la oportunidad de corregir los defectos documentales detectados antes de ser excluidos definitivamente del proceso electoral.
+    <p>
+      El laudo dictado en el proceso electoral de Prosegur no decide quién tiene razón sobre el fondo de todas las cuestiones planteadas. Lo que sí establece con claridad es que CCOO y USO-Canarias debieron tener la oportunidad de corregir los defectos documentales detectados antes de ser excluidos definitivamente del proceso electoral.
+    </p>
 
-La consecuencia inmediata es la anulación de la exclusión acordada por la Mesa Electoral y la obligación de repetir esa fase del procedimiento respetando el derecho de subsanación.
+    <p>
+      La consecuencia inmediata es la anulación de la exclusión acordada por la Mesa Electoral y la obligación de repetir esa fase del procedimiento respetando el derecho de subsanación.
+    </p>
 
-Para los vigilantes de seguridad, este pronunciamiento supone un recordatorio de que los procesos electorales deben garantizar la máxima participación posible y que los errores formales, cuando son corregibles, no pueden convertirse en una barrera para la representación sindical.
+    <p>
+      Para los vigilantes de seguridad, este pronunciamiento supone un recordatorio de que los procesos electorales deben garantizar la máxima participación posible y que los errores formales, cuando son corregibles, no pueden convertirse en una barrera para la representación sindical.
+    </p>
 
-</p>
-  
-</div>
+    <div class="article-author">
+      ✍️ Autor: Jaime A. Pérez D. · CCOO Hábitat Prosegur Tenerife
+    </div>
 
-<!-- NAVEGACION -->
+  </div>
 
-<div class="article-navigation">
+  <!-- NAVEGACION -->
 
-<a id="prev-news" class="nav-button"></a>
-<a id="next-news" class="nav-button"></a>
-
-</div>
+  <div class="article-navigation">
+    <a id="prev-news" class="nav-button"></a>
+    <a id="next-news" class="nav-button"></a>
+  </div>
 
 </main>
 
 <footer>
-
-<p>
-CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife
-</p>
-
-
-
+  <p>CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife</p>
+  <p>
+    <a href="../aviso-legal.html">Aviso legal</a> |
+    <a href="../politica-privacidad.html">Política de privacidad</a> |
+    <a href="../politica-cookies.html">Política de cookies</a>
+  </p>
 </footer>
 
 <!-- SCRIPT MENU -->
-
 <script>
-
 function toggleMenu(){
-document.getElementById("menu").classList.toggle("show");
+  document.getElementById("menu").classList.toggle("show");
 }
-
 </script>
 
 <!-- SCRIPT NAVEGACION -->
-
 <script>
-
 const currentPage = window.location.pathname.split("/").pop();
 
 fetch("../data/noticias.json")
-.then(res=>res.json())
-.then(data=>{
+.then(res => res.json())
+.then(data => {
 
-data.sort((a,b)=> new Date(b.date) - new Date(a.date));
+  data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+  const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
 
-const prevBtn = document.getElementById("prev-news");
-const nextBtn = document.getElementById("next-news");
+  const prevBtn = document.getElementById("prev-news");
+  const nextBtn = document.getElementById("next-news");
 
-if(index < data.length - 1){
+  if(index < data.length - 1){
+    prevBtn.innerHTML = "← Noticia anterior";
+    prevBtn.href = "../" + data[index + 1].url;
+  } else {
+    prevBtn.style.display = "none";
+  }
 
-prevBtn.innerHTML = "← Noticia anterior";
-prevBtn.href = "../" + data[index + 1].url;
-
-}else{
-
-prevBtn.style.display = "none";
-
-}
-
-if(index > 0){
-
-nextBtn.innerHTML = "Siguiente noticia →";
-nextBtn.href = "../" + data[index - 1].url;
-
-}else{
-
-nextBtn.style.display = "none";
-
-}
+  if(index > 0){
+    nextBtn.innerHTML = "Siguiente noticia →";
+    nextBtn.href = "../" + data[index - 1].url;
+  } else {
+    nextBtn.style.display = "none";
+  }
 
 })
-.catch(error=>console.error(error));
-
+.catch(error => console.error(error));
 </script>
 
 </body>
