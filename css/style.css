@@ -385,12 +385,14 @@ border:1px solid #e30613;
 
 /* IMAGEN ARTICULO */
 
-.article-image{
-width:100%;
-height:auto;
-display:block;
-border-radius:4px;
-margin:20px 0;
+.article-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;   /* ← cambia cover por contain */
+  object-position: center;
+  border-radius: 4px;
+  margin: 20px 0;
+  background: #0d0d0d;   /* fondo negro para los bordes vacíos */
 }
 
 /* RESPONSIVE */
