@@ -383,6 +383,16 @@ color:white;
 border:1px solid #e30613;
 }
 
+/* IMAGEN ARTICULO */
+
+.article-image{
+width:100%;
+height:auto;
+display:block;
+border-radius:4px;
+margin:20px 0;
+}
+
 /* RESPONSIVE */
 
 @media(max-width:900px){
@@ -430,4 +440,3 @@ text-align:center;
 }
 
 }
-
