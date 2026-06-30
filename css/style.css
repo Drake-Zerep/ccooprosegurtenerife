@@ -77,11 +77,11 @@ border:1px solid #e30613;
 transform:translateY(-3px);
 }
 
-.card img{
-    width:100%;
-    aspect-ratio:16/9;
-    object-fit:contain;
-    background:#111;
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .card h3{
