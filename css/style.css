@@ -383,28 +383,14 @@ color:white;
 border:1px solid #e30613;
 }
 
-/* IMAGEN ARTICULO */
+/* IMAGEN ARTICULO (la clase real usada en el HTML es .article-image) */
 
-.post-image{
-text-align:center;
-overflow:visible;
-}
-
-.post-image img{
+.article-image{
 width:100%;
 height:auto;
-object-fit:contain !important;
 display:block;
-margin:0 auto;
-}
-
-/* IMÁGENES GENERALES */
-
-img{
-display:block;
-margin:0 auto;
-max-width:100%;
-height:auto;
+margin:20px auto;
+border-radius:4px;
 object-fit:contain;
 }
 
@@ -452,4 +438,4 @@ flex-direction:column;
 text-align:center;
 }
 
-} /* ← ESTA LLAVE ERA LA QUE FALTABA */
+}
