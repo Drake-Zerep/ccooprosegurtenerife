@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-THD2GX50JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-THD2GX50JQ');
+</script>
+
+<meta name="google-site-verification" content="ciypADkem7cbx9s-4eRfk-ek9qtXOpXjAEZNP6UWbms" />
+<meta name="description" content="El voto en unas elecciones sindicales es personal, secreto y libre. Nadie puede decirte a quién debes votar. CCOO Hábitat Prosegur Tenerife.">
+<meta name="keywords" content="CCOO Prosegur Tenerife, elecciones sindicales, voto libre, transparencia sindical, seguridad privada Canarias">
+<meta name="author" content="CCOO Hábitat Prosegur Tenerife">
+<meta property="og:title" content="El voto es tuyo · Tu afiliación no decide tu voto">
+<meta property="og:description" content="El voto en unas elecciones sindicales es personal, secreto y libre. Nadie puede decirte a quién debes votar.">
+<meta property="og:image" content="https://drake-zerep.github.io/ccooprosegurtenerife/img/noticias/voto.png">
+<meta property="og:type" content="website">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>El voto es tuyo · Tu afiliación no decide tu voto · CCOO Hábitat Prosegur Tenerife</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+.article-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.article-title {
+  font-size: 32px;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.article-subtitle {
+  font-size: 20px;
+  color: #e30613;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.article-meta {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.article-content {
+  line-height: 1.9;
+  color: #ddd;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.article-content h2 {
+  color: #e30613;
+  font-size: 19px;
+  margin: 30px 0 10px 0;
+  border-left: 3px solid #e30613;
+  padding-left: 10px;
+}
+
+.article-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.article-content ul li {
+  margin-bottom: 6px;
+  color: #ddd;
+  padding-left: 10px;
+  border-left: 2px solid #e30613;
+  margin-left: 0;
+}
+
+.article-content ul li::before {
+  content: '';
+}
+
+.destacado {
+  background: #1a1a1a;
+  border-left: 4px solid #e30613;
+  padding: 14px 18px;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0 4px 4px 0;
+}
+
+.cierre {
+  background: #111;
+  border: 1px solid #e30613;
+  padding: 24px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.cierre span {
+  display: block;
+  font-size: 22px;
+  color: #e30613;
+  margin-top: 8px;
+}
+
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.nav-button {
+  border: 1px solid #e30613;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.nav-button:hover {
+  background: #e30613;
+}
+
+.article-author {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+  <div class="header-banner">
+    <img src="../img/banner-header.png" class="banner-img">
+  </div>
+
+  <div class="header-menu">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../noticias.html">Noticias</a>
+      <a href="../comunicados.html">Comunicados</a>
+      <a href="../elecciones.html">Elecciones 2026</a>
+      <a href="../derechos.html">Tus Derechos</a>
+      <a href="../seccion-sindical.html">Sección Sindical</a>
+      <a href="../afiliate.html">Afíliate</a>
+      <a href="../documentos.html">Documentos</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+</header>
+
+<!-- ARTICULO -->
+
+<main class="article-container">
+
+  <h1 class="article-title">El voto es tuyo</h1>
+  <div class="article-subtitle">Tu afiliación no decide tu voto</div>
+
+  <div class="article-meta">
+    Publicado: 03 julio 2026 · CCOO Hábitat - Jaime A. Pérez D.
+  </div>
+
+  <div style="width:100%; background:#0d0d0d; border-radius:4px; margin:20px 0; display:flex; justify-content:center; align-items:center; overflow:hidden;">
+    <img src="../img/noticias/voto.png" alt="El voto es tuyo · Elecciones sindicales Prosegur Tenerife" style="max-width:100%; max-height:420px; width:auto; height:auto; display:block; object-fit:contain;">
+  </div>
+
+  <div class="article-content">
+
+    <div class="destacado">
+      El voto en unas elecciones sindicales es <strong>personal, secreto y libre</strong>. Nadie puede decirte a quién debes votar ni existe obligación alguna de respaldar al sindicato al que perteneces.
+    </div>
+
+    <p>
+      Estar afiliado a una organización sindical significa apoyar un modelo de representación, pero no supone renunciar a la libertad de elegir. El verdadero valor de la democracia está precisamente en esa libertad.
+    </p>
+
+
+    <h2>La confianza se gana cada día</h2>
+
+    <p>
+      Las siglas, por sí solas, no representan a nadie. Lo hacen las personas, su trabajo diario, su compromiso, su cercanía y su forma de defender los derechos de la plantilla.
+    </p>
+
+    <p>
+      Cada cuatro años tenemos la oportunidad de valorar quién ha estado presente cuando hacía falta y quién ha utilizado la representación para trabajar por todos.
+    </p>
+
+
+    <h2>Las horas sindicales son un recurso de todos</h2>
+
+    <p>
+      Las horas sindicales existen para atender problemas laborales, visitar servicios, negociar mejoras, asesorar a los compañeros y defender derechos. <strong>No son un privilegio personal.</strong>
+    </p>
+
+    <p>
+      Cuando esos recursos se utilizan para cuestiones ajenas a la representación sindical, toda la plantilla pierde. Por ello creemos que debe existir un mayor control, más transparencia y una rendición de cuentas clara sobre el uso de esas horas.
+    </p>
+
+    <p>Porque los recursos sindicales pertenecen a todos los trabajadores.</p>
+
+
+    <h2>Transparencia significa informar</h2>
+
+    <p>Una representación sindical moderna debe explicar:</p>
+
+    <ul>
+      <li>qué hace</li>
+      <li>dónde emplea su tiempo</li>
+      <li>qué consigue</li>
+      <li>qué propone</li>
+      <li>cómo utiliza los recursos de los trabajadores</li>
+    </ul>
+
+    <div class="destacado">
+      La transparencia genera confianza.<br>
+      La opacidad genera dudas.
+    </div>
+
+
+    <h2>Participar también es exigir</h2>
+
+    <p>Votar no es solo elegir representantes. También es exigir una forma distinta de hacer sindicalismo:</p>
+
+    <ul>
+      <li>más cercana</li>
+      <li>más responsable</li>
+      <li>más transparente</li>
+      <li>más participativa</li>
+    </ul>
+
+    <p>Porque quien representa a la plantilla debe rendir cuentas a la plantilla.</p>
+
+
+    <h2>El 14 de julio decides tú</h2>
+
+    <p>Ese día nadie vota por ti.</p>
+
+    <ul>
+      <li>No votes por costumbre.</li>
+      <li>No votes por inercia.</li>
+      <li>No votes porque siempre fue así.</li>
+    </ul>
+
+    <p><strong>Infórmate. Compara. Pregunta.</strong></p>
+
+    <p>Y después decide con libertad. Porque el voto no pertenece a ningún sindicato.</p>
+
+    <div class="cierre">
+      El voto es tuyo.
+      <span>14 de julio · Elecciones sindicales Prosegur Tenerife</span>
+    </div>
+
+    <div class="article-author">
+      ✍️ Autor: Jaime A. Pérez D. · CCOO Hábitat Prosegur Tenerife
+    </div>
+
+  </div>
+
+  <!-- NAVEGACION -->
+
+  <div class="article-navigation">
+    <a id="prev-news" class="nav-button"></a>
+    <a id="next-news" class="nav-button"></a>
+  </div>
+
+</main>
+
+<footer>
+  <p>CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife</p>
+  <p>
+    <a href="../aviso-legal.html">Aviso legal</a> |
+    <a href="../politica-privacidad.html">Política de privacidad</a> |
+    <a href="../politica-cookies.html">Política de cookies</a>
+  </p>
+</footer>
+
+<!-- SCRIPT MENU -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+<!-- SCRIPT NAVEGACION -->
+<script>
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+.then(res => res.json())
+.then(data => {
+
+  data.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+
+  const prevBtn = document.getElementById("prev-news");
+  const nextBtn = document.getElementById("next-news");
+
+  if(index < data.length - 1){
+    prevBtn.innerHTML = "← Noticia anterior";
+    prevBtn.href = "../" + data[index + 1].url;
+  } else {
+    prevBtn.style.display = "none";
+  }
+
+  if(index > 0){
+    nextBtn.innerHTML = "Siguiente noticia →";
+    nextBtn.href = "../" + data[index - 1].url;
+  } else {
+    nextBtn.style.display = "none";
+  }
+
+})
+.catch(error => console.error(error));
+</script>
+
+</body>
+</html>
