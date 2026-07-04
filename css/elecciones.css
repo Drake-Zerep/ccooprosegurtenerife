@@ -532,4 +532,29 @@ font-size:34px;
 
 }
 
+/* Cabecera */
+
+.header-info{
+    text-align:center;
+    padding:10px 0;
+    border-bottom:1px solid #333;
+}
+
+.header-info-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.fecha-web{
+    color:#aaa;
+    font-size:14px;
+    margin-bottom:3px;
+}
+
+.descripcion-web{
+    color:#ccc;
+    font-size:16px;
+    font-style:italic;
+}
+   
 }
