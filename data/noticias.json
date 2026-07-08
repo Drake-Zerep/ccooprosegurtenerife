@@ -1,5 +1,15 @@
 [
 {
+  "id": "mas-alla-del-programa",
+  "titulo": "Más allá del programa: ¿Por qué este es el momento de decidir nuestro futuro?",
+  "fecha": "2026-07-08",
+  "categoria": "Elecciones Sindicales 2026",
+  "imagen": "img/noticias/tuvoto.png",
+  "resumen": "Las elecciones sindicales no son solo una lista de propuestas. Son una oportunidad para decidir qué representación queremos y qué futuro laboral queremos construir entre todos.",
+  "archivo": "noticias/mas-alla-del-programa.html"
+}
+
+{
 "title": "El voto es tuyo: tu afiliación no decide tu voto",
 "date": "2026-07-03",
 "displayDate": "03 julio 2026",
