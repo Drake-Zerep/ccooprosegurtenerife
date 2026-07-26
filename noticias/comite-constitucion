@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-THD2GX50JQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-THD2GX50JQ');
+</script>
+
+<meta name="google-site-verification" content="ciypADkem7cbx9s-4eRfk-ek9qtXOpXjAEZNP6UWbms" />
+<meta name="description" content="Resumen crítico de la sesión constitutiva del Comité de Empresa de Prosegur SIS Tenerife y sus implicaciones para la plantilla.">
+<meta name="keywords" content="CCOO Prosegur Tenerife, comité de empresa, representación unitaria, seguridad privada, UGT, CCOO, USO">
+<meta name="author" content="CCOO Hábitat Prosegur Tenerife">
+<meta property="og:title" content="Sesión constitutiva del Comité de Empresa · Análisis crítico del mandato 2026-2030">
+<meta property="og:description" content="La mayoría sindical controla el Comité de Empresa de Prosegur SIS Tenerife. Analizamos qué puede significar para la plantilla.">
+<meta property="og:image" content="https://drake-zerep.github.io/ccooprosegurtenerife/img/noticias/comite.png">
+<meta property="og:type" content="website">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sesión constitutiva del Comité de Empresa · Análisis crítico · CCOO Hábitat Prosegur Tenerife</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+.article-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.article-title {
+  font-size: 32px;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.article-subtitle {
+  font-size: 20px;
+  color: #e30613;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.article-meta {
+  color: #aaa;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.article-content {
+  line-height: 1.9;
+  color: #ddd;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+}
+
+.article-content h2 {
+  color: #e30613;
+  font-size: 19px;
+  margin: 30px 0 10px 0;
+  border-left: 3px solid #e30613;
+  padding-left: 10px;
+}
+
+.article-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.article-content ul li {
+  margin-bottom: 6px;
+  color: #ddd;
+  padding-left: 10px;
+  border-left: 2px solid #e30613;
+  margin-left: 0;
+}
+
+.article-content ul li::before {
+  content: '';
+}
+
+.destacado {
+  background: #1a1a1a;
+  border-left: 4px solid #e30613;
+  padding: 14px 18px;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 0 4px 4px 0;
+}
+
+.cierre {
+  background: #111;
+  border: 1px solid #e30613;
+  padding: 24px 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.cierre span {
+  display: block;
+  font-size: 22px;
+  color: #e30613;
+  margin-top: 8px;
+}
+
+.article-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.nav-button {
+  border: 1px solid #e30613;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: white;
+  flex: 1;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.nav-button:hover {
+  background: #e30613;
+}
+
+.article-author {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+  <div class="header-banner">
+    <img src="../img/banner-header.png" class="banner-img">
+  </div>
+
+  <div class="header-menu">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="../noticias.html">Noticias</a>
+      <a href="../comunicados.html">Comunicados</a>
+      <a href="../elecciones.html">Elecciones 2026</a>
+      <a href="../derechos.html">Tus Derechos</a>
+      <a href="../seccion-sindical.html">Sección Sindical</a>
+      <a href="../afiliate.html">Afíliate</a>
+      <a href="../documentos.html">Documentos</a>
+      <a href="../contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+</header>
+
+<!-- ARTICULO -->
+
+<main class="article-container">
+
+  <h1 class="article-title">Sesión constitutiva del Comité de Empresa</h1>
+  <div class="article-subtitle">Qué se decidió el 23 de julio y qué puede significar para la plantilla</div>
+
+  <div class="article-meta">
+    Publicado: 24 julio 2026 · CCOO Hábitat - Jaime A. Pérez D.
+  </div>
+
+  <div style="width:100%; background:#0d0d0d; border-radius:4px; margin:20px 0; display:flex; justify-content:center; align-items:center; overflow:hidden;">
+    <img src="../img/noticias/comite.png" alt="Sesión constitutiva del Comité de Empresa Prosegur SIS Tenerife" style="max-width:100%; max-height:420px; width:auto; height:auto; display:block; object-fit:contain;">
+  </div>
+
+  <div class="article-content">
+
+    <div class="destacado">
+      El 23 de julio de 2026 se constituyó el nuevo Comité de Empresa de la delegación de Santa Cruz de Tenerife. 
+      La sesión dejó claro quién tendrá el control del órgano de representación unitaria durante los próximos cuatro años y qué riesgos puede implicar para la plantilla.
+    </div>
+
+    <h2>Resumen de la sesión</h2>
+
+    <p>
+      La sesión extraordinaria se celebró con la presencia de la totalidad de los representantes electos, tanto de forma presencial como telemática, 
+      verificándose el quórum y la validez formal del acto. Se procedió a la elección de los cargos ejecutivos del Comité y a la conformación de las principales comisiones de trabajo.
+    </p>
+
+    <p>
+      Desde el punto de vista procedimental, la sesión se ajustó a las normas habituales. 
+      Sin embargo, el resultado de las votaciones refleja una realidad que marcará el funcionamiento del Comité: 
+      la mayoría sindical impuso su criterio en todos los puntos clave.
+    </p>
+
+    <h2>Mayoría absoluta y control total</h2>
+
+    <p>
+      La fuerza sindical mayoritaria, con nueve de los trece representantes, decidió en bloque la Presidencia, la Secretaría y la composición de las comisiones. 
+      Las propuestas de las fuerzas minoritarias, que buscaban una distribución más proporcional de cargos y responsabilidades, fueron rechazadas sistemáticamente.
+    </p>
+
+    <p>
+      Este patrón de votación anticipa un Comité donde la mayoría tendrá <strong>control absoluto</strong> de la agenda, de las decisiones y de los espacios de trabajo interno, 
+      dejando a las minorías con una capacidad muy limitada de influencia real.
+    </p>
+
+    <h2>Comisiones sin equilibrio representativo</h2>
+
+    <p>
+      Algunas comisiones quedaron configuradas con presencia de todas las sensibilidades sindicales, pero otras quedaron integradas exclusivamente por miembros de la mayoría. 
+      En especial, la comisión encargada de cuadrantes y vacaciones, un área especialmente sensible para la plantilla, quedó bajo control total de un único bloque.
+    </p>
+
+    <p>
+      Esta falta de equilibrio puede traducirse en:
+    </p>
+
+    <ul>
+      <li>Menor pluralidad en la toma de decisiones técnicas.</li>
+      <li>Menor transparencia en la gestión de cuadrantes y descansos.</li>
+      <li>Riesgo de decisiones unilaterales sin contraste interno.</li>
+    </ul>
+
+    <h2>Delegados de Prevención: una oportunidad perdida</h2>
+
+    <p>
+      La normativa de prevención de riesgos laborales establece un número mínimo de Delegados de Prevención en función de la plantilla del centro, 
+      pero también permite estudiar ampliaciones cuando la realidad global lo justifica.
+    </p>
+
+    <p>
+      En la sesión constitutiva se optó por designar únicamente representantes de la mayoría como Delegados de Prevención, 
+      dejando fuera cualquier opción de pluralidad en un ámbito tan crítico como la seguridad y salud laboral. 
+      Aunque se mencionó la posibilidad de estudiar un cuarto delegado en el futuro, la decisión inicial refuerza la idea de un Comité sin equilibrio interno en esta materia.
+    </p>
+
+    <h2>Qué puede deparar este mandato</h2>
+
+    <p>
+      Con un Comité controlado por una sola fuerza sindical, es previsible:
+    </p>
+
+    <ul>
+      <li>Menor debate interno: las decisiones se aprobarán por mayoría automática.</li>
+      <li>Menor transparencia: las comisiones clave estarán bajo control de un único bloque.</li>
+      <li>Menor pluralidad: las propuestas de la minoría pueden quedar sistemáticamente desestimadas.</li>
+      <li>Riesgo de decisiones unilaterales en cuadrantes, vacaciones, formación y prevención.</li>
+      <li>Menor capacidad de defensa equilibrada de la plantilla ante la empresa.</li>
+    </ul>
+
+    <p>
+      La calidad democrática interna del Comité dependerá, en gran medida, de la voluntad de la mayoría de abrir espacios de diálogo y de permitir la participación real de todas las sensibilidades sindicales.
+    </p>
+
+    <h2>Llamamiento a la plantilla</h2>
+
+    <p>
+      La representación unitaria es un órgano de todos los trabajadores, no de una sola fuerza sindical. 
+      Por ello, la plantilla debe mantenerse informada, vigilante y participativa durante todo el mandato.
+    </p>
+
+    <p>
+      Un Comité fuerte y plural es garantía de derechos. 
+      Un Comité desequilibrado requiere mayor seguimiento por parte de los trabajadores, más preguntas, más exigencia de transparencia y más participación en los canales disponibles.
+    </p>
+
+    <div class="destacado">
+      La transparencia, la comunicación y la participación serán claves para evitar que el Comité se convierta en un espacio cerrado y poco accesible para la plantilla.
+    </div>
+
+    <h2>Conclusión</h2>
+
+    <p>
+      La sesión del 23 de julio marca el inicio de un mandato en el que la mayoría sindical tendrá un control casi total del Comité de Empresa de Prosegur SIS Tenerife. 
+      Esto puede traducirse en estabilidad o en falta de pluralidad, dependiendo de cómo se gestione el poder interno y de cuánto se escuche a todas las voces.
+    </p>
+
+    <p>
+      Este artículo pretende informar, analizar y anticipar posibles escenarios, sin señalar personas concretas y respetando la protección de datos, 
+      pero dejando claro que la composición actual del Comité exige una plantilla atenta y consciente de cómo se toman las decisiones que afectan a su día a día.
+    </p>
+
+    <div class="cierre">
+      Un Comité fuerte necesita pluralidad, transparencia y participación.
+      <span>Mandato 2026–2030 · Prosegur SIS · Santa Cruz de Tenerife</span>
+    </div>
+
+    <div class="article-author">
+      ✍️ Autor: Jaime A. Pérez D. · CCOO Hábitat Prosegur Tenerife
+    </div>
+
+  </div>
+
+  <!-- NAVEGACION -->
+
+  <div class="article-navigation">
+    <a id="prev-news" class="nav-button"></a>
+    <a id="next-news" class="nav-button"></a>
+  </div>
+
+</main>
+
+<footer>
+  <p>CCOO Hábitat · Seguridad Privada · Prosegur SYS SL · Santa Cruz de Tenerife</p>
+  <p>
+    <a href="../aviso-legal.html">Aviso legal</a> |
+    <a href="../politica-privacidad.html">Política de privacidad</a> |
+    <a href="../politica-cookies.html">Política de cookies</a>
+  </p>
+</footer>
+
+<!-- SCRIPT MENU -->
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+
+<!-- SCRIPT NAVEGACION -->
+<script>
+const currentPage = window.location.pathname.split("/").pop();
+
+fetch("../data/noticias.json")
+.then(res => res.json())
+.then(data => {
+
+  data.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  const index = data.findIndex(n => n.url.split("/").pop() === currentPage);
+
+  const prevBtn = document.getElementById("prev-news");
+  const nextBtn = document.getElementById("next-news");
+
+  if(index < data.length - 1){
+    prevBtn.innerHTML = "← Noticia anterior";
+    prevBtn.href = "../" + data[index + 1].url;
+  } else {
+    prevBtn.style.display = "none";
+  }
+
+  if(index > 0){
+    nextBtn.innerHTML = "Siguiente noticia →";
+    nextBtn.href = "../" + data[index - 1].url;
+  } else {
+    nextBtn.style.display = "none";
+  }
+
+})
+.catch(error => console.error(error));
+</script>
+
+</body>
+</html>
