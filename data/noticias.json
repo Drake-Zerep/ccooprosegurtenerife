@@ -1,152 +1,146 @@
 [
-{
-"title": "¡Lo hemos logrado! Gracias por vuestra confianza",
-"date": "2026-07-14",
-"displayDate": "14 julio 2026",
-"summary": "CCOO Hábitat obtiene 23 votos y 3 delegados en las elecciones sindicales. Gracias por vuestra confianza. Comienza una nueva etapa de trabajo, cercanía y transparencia para toda la plantilla.",
-"image": "img/noticias/resultado-elecciones.png",
-"category": "Elecciones sindicales",
-"url": "noticias/resultado-elecciones-2026.html"
-},
-  
-{
-"title": "Hoy termina la campaña. Mañana habla tu conciencia.",
-"date": "2026-07-13",
-"displayDate": "13 julio 2026",
-"summary": "Finaliza la campaña electoral. Un mensaje de agradecimiento, reflexión y compromiso antes de que la plantilla decida libremente en las urnas el próximo 14 de julio.",
-"image": "img/noticias/fin-campana.png",
-"category": "Elecciones sindicales",
-"url": "noticias/hoy-termina-la-campana.html"
-},
-  
-{
-"title": "Más allá del programa: ¿Por qué este es el momento de decidir nuestro futuro?",
-"date": "2026-07-08",
-"displayDate": "08 julio 2026",
-"summary": "Las elecciones sindicales son mucho más que una lista de propuestas. Son la oportunidad de decidir qué representación queremos y qué futuro laboral queremos construir entre todos.",
-"image": "img/noticias/tuvoto.png",
-"category": "Elecciones sindicales",
-"url": "noticias/mas-alla-del-programa.html"
-},
-
-{
-"title": "El voto es tuyo: tu afiliación no decide tu voto",
-"date": "2026-07-03",
-"displayDate": "03 julio 2026",
-"summary": "El voto en unas elecciones sindicales es personal, secreto y libre. Nadie puede decirte a quién debes votar ni existe obligación de respaldar al sindicato al que perteneces.",
-"url": "noticias/el-voto-es-tuyo.html",
-"image": "img/noticias/voto.png",
-"category": "Elecciones sindicales"
-},
-
-{
-"title": "Carta de CCOO a la plantilla de Prosegur Canarias",
-"date": "2026-06-29",
-"displayDate": "29 junio 2026",
-"summary": "La democracia sindical se defiende con hechos, no con relatos. CCOO responde y aclara los hechos sobre el proceso electoral.",
-"url": "noticias/carta-ccoo-plantilla-prosegur-canarias.html",
-"image": "img/noticias/carta-ccoo-plantilla.png",
-"category": "Elecciones sindicales"
-},
-  
-{
-"title":"Laudo de elecciones sindicales",
-"date":"2026-06-09",
-"displayDate":"09 junio 2026",
-"summary":"Un árbitro electoral ha estimado parcialmente las reclamaciones presentadas por CCOO y USO-Canarias.",
-"url":"noticias/Laudo-elecciones.html",
-"image":"img/noticias/laudo.png",
-"category":"Elecciones sindicales"
-},
-  
-{
-"title":"CCOO denuncia graves irregularidades en el proceso electoral de PROSEGUR",
-"date":"2026-02-22",
-"displayDate":"22 febrero 2026",
-"summary":"CCOO ha impugnado formalmente el proceso electoral tras detectar irregularidades graves que afectan a la legalidad y transparencia del procedimiento.",
-"url":"noticias/ccoo-denuncia-irregularidades-prosegur.html",
-"image":"img/noticias/irregularidades.png",
-"category":"Elecciones sindicales"
-},
-
-{
-"title":"La seguridad privada en Europa: precariedad laboral, desigualdad y regulación fragmentada",
-"date":"2026-03-11",
-"displayDate":"11 marzo 2026",
-"summary":"Radiografía de la seguridad privada en Europa.",
-"url":"noticias/seguridad-europa.html",
-"image":"img/noticias/desigualdad.png",
-"category":"Tecnología y seguridad"
-},
-  
-{
-"title":"Nueva polémica para Prosegur: denuncia en Barcelona por incumplir la normativa de la seguridad privada",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"Nueva polémica para Prosegur: denuncia en Barcelona por incumplir la normativa de la seguridad privada.",
-"url":"noticias/Nueva-polémica-para-Prosegur.html",
-"image":"img/noticias/fachada.jpg",
-"category":"Información laboral"
-},
-  
-{
-"title":"Firmado el nuevo convenio estatal de seguridad privada 2027-2030 con mejoras laborales",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"El nuevo convenio establece incrementos salariales y mejoras laborales para el sector.",
-"url":"noticias/convenio-seguridad-privada-2027-2030.html",
-"image":"img/noticias/convenio-2027-2030.jpg",
-"category":"Convenio colectivo"
-},
-
-{
-"title":"La seguridad privada evoluciona hacia funciones críticas con mejores salarios",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"El sector de la seguridad privada evoluciona hacia funciones más técnicas y mejor remuneradas.",
-"url":"noticias/seguridad-privada-aumento-salarial.html",
-"image":"img/noticias/seguridad-privada.jpg",
-"category":"Información laboral"
-},
-
-{
-"title":"Inspección de Trabajo levanta actas de infracción grave a Prosegur por incumplimientos en permisos retribuidos",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"La Inspección de Trabajo detecta incumplimientos en la concesión de permisos retribuidos y gestión laboral.",
-"url":"noticias/inspeccion-infraccion-permisos-prosegur.html",
-"image":"img/noticias/inspeccion-prosegur.jpg",
-"category":"Información laboral"
-},
-
-{
-"title":"La nueva ley de multirreincidencia refuerza el papel del vigilante de seguridad",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"La reforma penal refuerza el papel del vigilante en la prevención de delitos reincidentes.",
-"url":"noticias/ley-multirreincidencia-vigilantes.html",
-"image":"img/noticias/multirreincidencia.jpg",
-"category":"Información legal"
-},
-
-{
-"title":"La falta de vigilantes en España evidencia la crisis estructural del sector de la seguridad privada",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"La escasez de vigilantes refleja problemas estructurales relacionados con condiciones laborales y relevo generacional.",
-"url":"noticias/falta-vigilantes-seguridad-privada-espana.html",
-"image":"img/noticias/falta-vigilantes.jpg",
-"category":"Información laboral"
-},
-
-{
-"title":"El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes",
-"date":"2026-02-21",
-"displayDate":"21 febrero 2026",
-"summary":"El sector evoluciona hacia perfiles más técnicos con gestión de sistemas inteligentes y datos.",
-"url":"noticias/vigilante-seguridad-gestion-datos-sistemas-inteligentes.html",
-"image":"img/noticias/vigilante-tecnologia.jpg",
-"category":"Tecnología y seguridad"
-}
-
+  {
+    "title": "Sesión constitutiva del Comité de Empresa",
+    "date": "2026-07-24",
+    "displayDate": "24 julio 2026",
+    "summary": "Análisis crítico de la sesión constitutiva del Comité de Empresa de Prosegur SIS Tenerife y sus implicaciones para la plantilla.",
+    "url": "noticias/comite-constitucion.html",
+    "image": "img/noticias/comite.png",
+    "category": "Información sindical"
+  },
+  {
+    "title": "¡Lo hemos logrado! Gracias por vuestra confianza",
+    "date": "2026-07-14",
+    "displayDate": "14 julio 2026",
+    "summary": "CCOO Hábitat obtiene 23 votos y 3 delegados en las elecciones sindicales. Gracias por vuestra confianza. Comienza una nueva etapa de trabajo, cercanía y transparencia para toda la plantilla.",
+    "image": "img/noticias/resultado-elecciones.png",
+    "category": "Elecciones sindicales",
+    "url": "noticias/resultado-elecciones-2026.html"
+  },
+  {
+    "title": "Hoy termina la campaña. Mañana habla tu conciencia.",
+    "date": "2026-07-13",
+    "displayDate": "13 julio 2026",
+    "summary": "Finaliza la campaña electoral. Un mensaje de agradecimiento, reflexión y compromiso antes de que la plantilla decida libremente en las urnas el próximo 14 de julio.",
+    "image": "img/noticias/fin-campana.png",
+    "category": "Elecciones sindicales",
+    "url": "noticias/hoy-termina-la-campana.html"
+  },
+  {
+    "title": "Más allá del programa: ¿Por qué este es el momento de decidir nuestro futuro?",
+    "date": "2026-07-08",
+    "displayDate": "08 julio 2026",
+    "summary": "Las elecciones sindicales son mucho más que una lista de propuestas. Son la oportunidad de decidir qué representación queremos y qué futuro laboral queremos construir entre todos.",
+    "image": "img/noticias/tuvoto.png",
+    "category": "Elecciones sindicales",
+    "url": "noticias/mas-alla-del-programa.html"
+  },
+  {
+    "title": "El voto es tuyo: tu afiliación no decide tu voto",
+    "date": "2026-07-03",
+    "displayDate": "03 julio 2026",
+    "summary": "El voto en unas elecciones sindicales es personal, secreto y libre. Nadie puede decirte a quién debes votar ni existe obligación de respaldar al sindicato al que perteneces.",
+    "url": "noticias/el-voto-es-tuyo.html",
+    "image": "img/noticias/voto.png",
+    "category": "Elecciones sindicales"
+  },
+  {
+    "title": "Carta de CCOO a la plantilla de Prosegur Canarias",
+    "date": "2026-06-29",
+    "displayDate": "29 junio 2026",
+    "summary": "La democracia sindical se defiende con hechos, no con relatos. CCOO responde y aclara los hechos sobre el proceso electoral.",
+    "url": "noticias/carta-ccoo-plantilla-prosegur-canarias.html",
+    "image": "img/noticias/carta-ccoo-plantilla.png",
+    "category": "Elecciones sindicales"
+  },
+  {
+    "title": "Laudo de elecciones sindicales",
+    "date": "2026-06-09",
+    "displayDate": "09 junio 2026",
+    "summary": "Un árbitro electoral ha estimado parcialmente las reclamaciones presentadas por CCOO y USO-Canarias.",
+    "url": "noticias/Laudo-elecciones.html",
+    "image": "img/noticias/laudo.png",
+    "category": "Elecciones sindicales"
+  },
+  {
+    "title": "CCOO denuncia graves irregularidades en el proceso electoral de PROSEGUR",
+    "date": "2026-02-22",
+    "displayDate": "22 febrero 2026",
+    "summary": "CCOO ha impugnado formalmente el proceso electoral tras detectar irregularidades graves que afectan a la legalidad y transparencia del procedimiento.",
+    "url": "noticias/ccoo-denuncia-irregularidades-prosegur.html",
+    "image": "img/noticias/irregularidades.png",
+    "category": "Elecciones sindicales"
+  },
+  {
+    "title": "La seguridad privada en Europa: precariedad laboral, desigualdad y regulación fragmentada",
+    "date": "2026-03-11",
+    "displayDate": "11 marzo 2026",
+    "summary": "Radiografía de la seguridad privada en Europa.",
+    "url": "noticias/seguridad-europa.html",
+    "image": "img/noticias/desigualdad.png",
+    "category": "Tecnología y seguridad"
+  },
+  {
+    "title": "Nueva polémica para Prosegur: denuncia en Barcelona por incumplir la normativa de la seguridad privada",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "Nueva polémica para Prosegur: denuncia en Barcelona por incumplir la normativa de la seguridad privada.",
+    "url": "noticias/Nueva-polémica-para-Prosegur.html",
+    "image": "img/noticias/fachada.jpg",
+    "category": "Información laboral"
+  },
+  {
+    "title": "Firmado el nuevo convenio estatal de seguridad privada 2027-2030 con mejoras laborales",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "El nuevo convenio establece incrementos salariales y mejoras laborales para el sector.",
+    "url": "noticias/convenio-seguridad-privada-2027-2030.html",
+    "image": "img/noticias/convenio-2027-2030.jpg",
+    "category": "Convenio colectivo"
+  },
+  {
+    "title": "La seguridad privada evoluciona hacia funciones críticas con mejores salarios",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "El sector de la seguridad privada evoluciona hacia funciones más técnicas y mejor remuneradas.",
+    "url": "noticias/seguridad-privada-aumento-salarial.html",
+    "image": "img/noticias/seguridad-privada.jpg",
+    "category": "Información laboral"
+  },
+  {
+    "title": "Inspección de Trabajo levanta actas de infracción grave a Prosegur por incumplimientos en permisos retribuidos",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "La Inspección de Trabajo detecta incumplimientos en la concesión de permisos retribuidos y gestión laboral.",
+    "url": "noticias/inspeccion-infraccion-permisos-prosegur.html",
+    "image": "img/noticias/inspeccion-prosegur.jpg",
+    "category": "Información laboral"
+  },
+  {
+    "title": "La nueva ley de multirreincidencia refuerza el papel del vigilante de seguridad",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "La reforma penal refuerza el papel del vigilante en la prevención de delitos reincidentes.",
+    "url": "noticias/ley-multirreincidencia-vigilantes.html",
+    "image": "img/noticias/multirreincidencia.jpg",
+    "category": "Información legal"
+  },
+  {
+    "title": "La falta de vigilantes en España evidencia la crisis estructural del sector de la seguridad privada",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "La escasez de vigilantes refleja problemas estructurales relacionados con condiciones laborales y relevo generacional.",
+    "url": "noticias/falta-vigilantes-seguridad-privada-espana.html",
+    "image": "img/noticias/falta-vigilantes.jpg",
+    "category": "Información laboral"
+  },
+  {
+    "title": "El vigilante de seguridad evoluciona hacia la gestión de sistemas inteligentes",
+    "date": "2026-02-21",
+    "displayDate": "21 febrero 2026",
+    "summary": "El sector evoluciona hacia perfiles más técnicos con gestión de sistemas inteligentes y datos.",
+    "url": "noticias/vigilante-seguridad-gestion-datos-sistemas-inteligentes.html",
+    "image": "img/noticias/vigilante-tecnologia.jpg",
+    "category": "Tecnología y seguridad"
+  }
 ]
